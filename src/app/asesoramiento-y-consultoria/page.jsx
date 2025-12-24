@@ -1,10 +1,12 @@
 import Asesoramiento from '@/assets/images/asesoramiento.jpg';
 import { Reveal } from '@/components/animation/Reveal';
 import Image from 'next/image';
+import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 const page = () => {
   return (
     <section className="bg-[#FAFAFA]">
+      <WhatsAppButton />
       <div>
         <Image src={Asesoramiento} alt="" />
       </div>

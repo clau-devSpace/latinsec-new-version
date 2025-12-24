@@ -2,10 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import { Reveal } from '@/components/animation/Reveal';
 import estacionLlamadas from '@/assets/images/estacion-llamadas-seguridad.png';
+import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 const ServicioDeToten = () => {
   return (
     <main className="pt-20">
+      <WhatsAppButton />
       <section className="relative bg-[#252B42] text-white py-20">
         <div className="max-w-6xl mx-auto px-5">
           <Reveal>

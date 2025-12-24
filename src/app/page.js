@@ -21,34 +21,36 @@ import { DataCompanies } from '@/data/dataCompanies';
 import { DataTerritory } from '@/data/dataTerritory';
 import SwiperAbout from '@/components/SwiperAbout';
 import Image from 'next/image';
+import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 const Home = () => {
   return (
     <main className="z-10 relative">
-      <ChatBot />
-      <section 
+      {/*<ChatBot />*/}
+      <WhatsAppButton />
+      <section
         className="h-screen grid place-content-center text-white relative"
         style={{
           backgroundImage: `url(${bgPrimary.src})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed'
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="flex flex-col items-center text-center gap-3 relative z-10">
           <h1 className="xl:text-[58px] lg:text-5xl text-3xl font-extrabold  max-w-[780px]">
-            Tu{' '}
+            Tu{" "}
             <Typewriter
-              words={['protección']}
+              words={["protección"]}
               loop={5}
               cursor
               cursorStyle=""
               typeSpeed={100}
               deleteSpeed={80}
               delaySpeed={2000}
-            />{' '}
+            />{" "}
             es nuestra especialidad
           </h1>
           <p className="font-medium xl:text-xl lg:text-lg text-md max-w-sm">
@@ -107,7 +109,9 @@ const Home = () => {
                   <SearchIcon className="w-16 h-16" />
                 </span>
               </div>
-              <h2 className="text-xl font-bold text-[#252B42] mb-4">Investigación</h2>
+              <h2 className="text-xl font-bold text-[#252B42] mb-4">
+                Investigación
+              </h2>
               <p className="text-[#737373] text-sm mb-6">
                 Enfocado en la investigación de casos
               </p>
@@ -128,7 +132,9 @@ const Home = () => {
                   <ShopTwotoneIcon className="w-16 h-16" />
                 </span>
               </div>
-              <h2 className="text-xl font-bold text-[#252B42] mb-4">Seguridad física</h2>
+              <h2 className="text-xl font-bold text-[#252B42] mb-4">
+                Seguridad física
+              </h2>
               <p className="text-[#737373] text-sm mb-6">
                 Personal de seguridad en todas las tiendas
               </p>
@@ -172,7 +178,9 @@ const Home = () => {
                   <CameraIcon className="w-16 h-16" />
                 </span>
               </div>
-              <h2 className="text-xl font-bold text-[#252B42] mb-4">Seguridad electrónica</h2>
+              <h2 className="text-xl font-bold text-[#252B42] mb-4">
+                Seguridad electrónica
+              </h2>
               <p className="text-[#737373] text-sm mb-6">
                 Poseemos un Centro de Monitoreo Propio
               </p>
@@ -193,7 +201,9 @@ const Home = () => {
                   <NotebookIcon className="w-16 h-16" />
                 </span>
               </div>
-              <h2 className="text-xl font-bold text-white mb-4">Servicio de Toten</h2>
+              <h2 className="text-xl font-bold text-white mb-4">
+                Servicio de Toten
+              </h2>
               <p className="text-white/90 text-sm mb-6">
                 Sistema de control de rondas y vigilancia
               </p>
@@ -225,15 +235,15 @@ const Home = () => {
             </div>
           </Reveal>
           <div className="lg:flex py-16 items-center px-5 justify-between">
-            <div className="lg:w-[597px]">
+            {/* <div className="lg:w-[597px]">
               <SwiperAbout />
-            </div>
-            <div className="lg:w-[336px] grid place-content-center">
+            </div>*/}
+            <div className="lg:w-[800px] w-full max-w-[800px] mx-auto grid place-content-center px-4">
               <div>
-                <h3 className="font-bold text-[40px] lg:text-start text-center mb-5 lg:mt-0 text-[#252B42]">
+                <h3 className="font-bold text-[40px] text-center mb-5 lg:mt-0 text-[#252B42]">
                   Líderes en el mercado
                 </h3>
-                <p className="text-[#737373] font-medium">
+                <p className="text-[#737373] text-center font-medium">
                   LatinSec es una compañía de seguridad y protección
                   patrimonial, con más de 26 años de trayectoria. En constante
                   crecimiento y actualización, hoy somos unas de las más
@@ -261,7 +271,7 @@ const Home = () => {
       <section className="bg-[#FAFAFA] py-16 px-5">
         <div className="text-center">
           <h3 className="text-[#252B42] font-bold text-[32px]">
-            Compañías con la que trabaja{' '}
+            Compañías con la que trabaja{" "}
             <span className="text-[#0263A5]">Latin</span>
             <span className="text-[#FF0000]">Sec</span>
           </h3>

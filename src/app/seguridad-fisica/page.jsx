@@ -1,10 +1,12 @@
 import Seguridad from '@/assets/images/newImage.jpeg';
 import { Reveal } from '@/components/animation/Reveal';
 import Image from 'next/image';
+import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 const page = () => {
   return (
     <section className="bg-[#FAFAFA]">
+    <WhatsAppButton />
     <div className="flex justify-center">
         {/* Ajustar el tamaño de la imagen para que ocupe todo el ancho pero con altura controlada */}
           <Image

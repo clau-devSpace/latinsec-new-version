@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Logo from '@/assets/images/logo.png';
+import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 const ContactPage = () => {
   return (
     <section className="bg-[#FAFAFA] py-16">
+      <WhatsAppButton />
       <div className="max-w-5xl mx-auto px-5">
         <div className="flex flex-col items-center mb-10">
           <Image src={Logo} alt="LatinSec Logo" width={150} height={50} />
