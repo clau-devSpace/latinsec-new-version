@@ -7,9 +7,9 @@ export const MenuHamburger = ({ handleOpenMenu }) => {
         onClick={handleOpenMenu}
         className="w-4 h-3.5 overflow-hidden flex flex-col justify-between mobile-button"
       >
-        <span className="left-0 w-4 h-0.5 bg-white rounded-[1px]"></span>
-        <span className="left-0 w-2 h-0.5 bg-white rounded-[1px]"></span>
-        <span className="left-0 w-3 h-0.5 bg-white rounded-[1px]"></span>
+        <span className="left-0 w-4 h-0.5 bg-[#07142A] rounded-[1px]"></span>
+        <span className="left-0 w-2 h-0.5 bg-[#07142A] rounded-[1px]"></span>
+        <span className="left-0 w-3 h-0.5 bg-[#07142A] rounded-[1px]"></span>
       </span>
     </div>
   );

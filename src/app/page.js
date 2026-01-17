@@ -159,7 +159,7 @@ const Home = () => {
     >
       {/* Seguridad Fisica */}
       <div className="group relative h-[340px] rounded-2xl overflow-hidden shadow-md">
-        <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/70 px-5 py-2">
+        <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/80 px-5 py-2">
           <h3 className="text-white text-base font-medium">Seguridad Física</h3>
         </div>
         <img

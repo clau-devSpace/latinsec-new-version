@@ -16,7 +16,7 @@ export const Navbar = () => {
 
   return (
     <header className="nav fixed top-0 w-full z-50 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
-      <nav className="max-w-[1400px] mx-auto px-10 py-1.5 grid grid-cols-[auto_1fr_auto] items-center gap-8">
+      <nav className="bg-white max-w-[1400px] mx-auto px-10 py-1.5 grid grid-cols-[auto_1fr_auto] items-center gap-8">
         {/* Logo */}
         <div className="w-32">
           <a href="/">
