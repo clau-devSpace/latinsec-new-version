@@ -13,6 +13,7 @@ import {
 import { FaBuilding, FaUsers, FaAward } from "react-icons/fa";
 import ChatBot from '@/components/ChatBot/ChatBot';
 import SwiperCompanies from '@/components/SwiperCompanies';
+import SwiperTerritorial from '@/components/SwiperTerritorial';
 import SwiperComponent from '@/components/SwiperComponent';
 import bgPrimary from '@/assets/images/bg-primary.webp';
 import CountUp from 'react-countup';
@@ -33,6 +34,7 @@ import RobotsAutonomos from '@/assets/images/robots-autonomos.png';
 import SeguridadBancaria from '@/assets/images/seguridad-en-bancos.jpeg';
 import Research from '@/assets/images/research.jpg';
 import Totem from '@/assets/images/totem-vigilador.png';
+
 
 
 const Home = () => {
@@ -400,7 +402,7 @@ const Home = () => {
           <SwiperComponent />
         </div>
       </section>
-      <section className="bg-[#FAFAFA] py-16 px-5">
+      <section className="bg-[#FAFAFA] py-10 px-5">
         <div className="text-center">
           <h3 className="text-[#252B42] font-bold text-[32px]">
             Compañías con la que trabaja{" "}
@@ -419,18 +421,12 @@ const Home = () => {
               <h3 className="font-bold text-[40px] text-[#07142A]">Cobertura Territorial</h3>
               <p className="font-medium text-sm text-[#4B5563] line-clamp-7">
                 <span className="text-[#0263A5]">Latin</span>
-                <span className="text-[#FF0000]">Sec</span> con habilitaciones
-                para operar tanto en la Ciudad de Buenos Aires como en todo el
-                Ã¡mbito de la Provincia, en jurisdicciÃ³n de la Prefectura Naval
-                Argentina y poseemos habilitaciones para el uso de armas de
-                ANMaC. AdemÃ¡s estamos adheridos a la CÃ¡mara Argentina de
-                Empresas de Seguridad e InvestigaciÃ³n (CAESI). Para custodia de
-                mercaderÃ­a en trÃ¡nsito en todo el territorio nacional.
+                <span className="text-[#FF0000]">Sec</span> cuenta con habilitaciones para operar tanto en la Ciudad de Buenos Aires como en todo el ámbito de la Provincia, en jurisdicción de la Prefectura Naval Argentina y poseemos habilitaciones para el uso de armas de ANMaC. Además estamos adheridos a la Cámara Argentina de Empresas de Seguridad e Investigación (CAESI). Para custodia de mercadería en tránsito en todo el territorio nacional.
               </p>
             </div>
           </Reveal>
           <div className="lg:w-[600px] mt-16 lg:mt-0">
-            <SwiperCompanies data={DataTerritory} />
+            <SwiperTerritorial data={DataTerritory} />
           </div>
         </div>
       </section>

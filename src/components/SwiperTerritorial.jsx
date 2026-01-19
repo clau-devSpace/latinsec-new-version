@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
 
-export default function SwiperCompanies({data}) {
+export default function SwiperTerritorial({data}) {
   return (
     <>
       <Swiper
@@ -41,8 +41,8 @@ export default function SwiperCompanies({data}) {
         className=""
       >
         {[...data, ...data].map(({ logo }, i) => (
-          <SwiperSlide key={i} className='h-36 flex items-center justify-center'>
-            <div className="w-40 flex items-center justify-center">
+          <SwiperSlide key={i} className='h-36 flex items-center'>
+            <div>
               <Image src={logo} alt="" />
             </div>
           </SwiperSlide>
