@@ -1,6 +1,7 @@
+"use client";
+
 import SeguridadElectronica from "@/assets/images/seguridad-electronica.jpg";
 
-// ✅ Imágenes reales
 import CamarasImg from "@/assets/images/camaras-de-seguridad.jpg";
 import AlarmasImg from "@/assets/images/sistemas-de-alarmas-inteligentes.jpg";
 import TotemImg from "@/assets/images/totem-vigilador-virtual.jpg";
@@ -30,21 +31,86 @@ const AEText = ({
     baseDelay = 0,
     step = 28,
     seed = 1337,
+    by = "char", // "char" | "word"
 }) => {
+    const rngFor = (index) => mulberry32(seed + index * 97);
+
+    if (by === "word") {
+        const tokens = text.split(/(\s+)/).filter(Boolean);
+
+        let globalIndex = 0;
+
+        return (
+            <Tag className={className} aria-label={text}>
+                {tokens.map((tok, tokenIdx) => {
+                    const isSpace = /^\s+$/.test(tok);
+
+                    if (isSpace) {
+                        globalIndex += tok.length;
+                        return (
+                            <span
+                                key={`sp-${tokenIdx}`}
+                                className="inline-block w-[0.35em]"
+                                aria-hidden="true"
+                            >
+                                {"\u00A0"}
+                            </span>
+                        );
+                    }
+
+                    const letters = Array.from(tok);
+
+                    return (
+                        <span
+                            key={`w-${tokenIdx}`}
+                            className="inline-block whitespace-nowrap"
+                        >
+                            {letters.map((ch, i) => {
+                                const idx = globalIndex++;
+                                const rng = rngFor(idx);
+
+                                const dx = Math.round((rng() * 2 - 1) * 26);
+                                const rot = Math.round((rng() * 2 - 1) * 16);
+                                const drop = Math.round(110 + rng() * 120);
+                                const dur = Math.round(820 + rng() * 260);
+                                const delay = baseDelay + idx * step;
+
+                                return (
+                                    <span
+                                        key={`${ch}-${idx}`}
+                                        className="ae-char inline-block"
+                                        style={{
+                                            "--dx": `${dx}px`,
+                                            "--rot": `${rot}deg`,
+                                            "--drop": `${drop}px`,
+                                            "--dur": `${dur}ms`,
+                                            "--delay": `${delay}ms`,
+                                        }}
+                                    >
+                                        {ch}
+                                    </span>
+                                );
+                            })}
+                        </span>
+                    );
+                })}
+            </Tag>
+        );
+    }
+
+    // by="char" (título)
     const chars = Array.from(text);
 
     return (
         <Tag className={className} aria-label={text}>
             {chars.map((ch, i) => {
                 const isSpace = ch === " ";
-
-                const rng = mulberry32(seed + i * 97);
+                const rng = rngFor(i);
 
                 const dx = Math.round((rng() * 2 - 1) * 26);
                 const rot = Math.round((rng() * 2 - 1) * 16);
                 const drop = Math.round(110 + rng() * 120);
                 const dur = Math.round(820 + rng() * 260);
-
                 const delay = baseDelay + i * step;
 
                 return (
@@ -229,40 +295,6 @@ export default function Page() {
         <section className="bg-[#FAFAFA]">
             <WhatsAppButton />
 
-            <style
-                dangerouslySetInnerHTML={{
-                    __html: `
-            @keyframes aeFall {
-              0% {
-                opacity: 0;
-                transform: translate3d(var(--dx), calc(-1 * var(--drop)), 0) rotate(var(--rot)) scale(1.12);
-                filter: blur(10px);
-              }
-              55% {
-                opacity: 1;
-                transform: translate3d(0px, 14px, 0) rotate(calc(var(--rot) * -0.35)) scale(1);
-                filter: blur(0);
-              }
-              78% { transform: translate3d(0px, -7px, 0) rotate(calc(var(--rot) * 0.12)); }
-              92% { transform: translate3d(0px, 3px, 0) rotate(calc(var(--rot) * -0.06)); }
-              100% {
-                opacity: 1;
-                transform: translate3d(0px, 0px, 0) rotate(0deg) scale(1);
-                filter: blur(0);
-              }
-            }
-            .ae-char {
-              animation: aeFall var(--dur) cubic-bezier(.2,.9,.2,1) both;
-              animation-delay: var(--delay);
-              will-change: transform, opacity, filter;
-            }
-            @media (prefers-reduced-motion: reduce) {
-              .ae-char { animation: none !important; opacity: 1 !important; transform: none !important; filter: none !important; }
-            }
-          `,
-                }}
-            />
-
             {/* HERO */}
             <div className="relative w-full">
                 <Image
@@ -282,6 +314,7 @@ export default function Page() {
                             seed={2026}
                             baseDelay={120}
                             step={28}
+                            by="char"
                             className="text-white font-extrabold text-3xl md:text-6xl leading-tight drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
                         />
 
@@ -291,7 +324,8 @@ export default function Page() {
                             seed={909}
                             baseDelay={820}
                             step={7}
-                            className="mt-3 text-white/90 text-sm md:text-base leading-relaxed"
+                            by="word"
+                            className="mt-3 mx-auto max-w-2xl text-white/90 text-sm md:text-base leading-relaxed"
                         />
                     </div>
                 </div>
@@ -330,7 +364,6 @@ export default function Page() {
                 </Reveal>
             </div>
 
-            {/* ESPECIALIDADES */}
             <div className="bg-gradient-to-b from-[#0B3B8C] via-[#082f73] to-[#06285f]">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
                     <Reveal hiddenValue={{ opacity: 0, y: 20 }}>
@@ -396,7 +429,6 @@ export default function Page() {
                             </Reveal>
                         </div>
 
-                        {/* 3 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center md:px-6 lg:px-10">
                             <Reveal hiddenValue={{ opacity: 0, x: -60 }}>
                                 <div>
