@@ -2,14 +2,23 @@ import Asesoramiento from '@/assets/images/asesoramiento.jpg';
 import { Reveal } from '@/components/animation/Reveal';
 import Image from 'next/image';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
+import AsesoramientoYConsultoria from '@/assets/images/consultoria.jpg';
 
 const page = () => {
   return (
-    <section className="bg-[#FAFAFA]">
+    <>
+     <section className='relative h-screen'>
       <WhatsAppButton />
-      <div>
-        <Image src={Asesoramiento} alt="" />
-      </div>
+      
+      <Image src={AsesoramientoYConsultoria} 
+      alt="Imagen aluciva a asesoramiento y consultoria" 
+      fill
+      className="object-cover"
+      />
+     </section>
+
+
+    <section className="bg-[#FAFAFA]">
       <div className="max-w-5xl mx-auto py-16 flex flex-col gap-5 px-5">
         <Reveal hiddenValue={{ opacity: 0, x: 75 }}>
           <section>
@@ -34,6 +43,8 @@ const page = () => {
         </Reveal>
       </div>
     </section>
+    </>
+   
   );
 };
 

@@ -34,6 +34,7 @@ import RobotsAutonomos from '@/assets/images/robots-autonomos.png';
 import SeguridadBancaria from '@/assets/images/seguridad-en-bancos.jpeg';
 import Research from '@/assets/images/research.jpg';
 import Totem from '@/assets/images/totem-vigilador.png';
+import NuevaPortada from '@/assets/images/portada-con-logo-latinsec.png'
 
 
 
@@ -46,7 +47,7 @@ const Home = () => {
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-[1]">
         <img 
-          src={ImagenPortada.src} 
+          src={NuevaPortada.src} 
           alt="Background"
           className="w-full h-full object-cover object-right"
         />
