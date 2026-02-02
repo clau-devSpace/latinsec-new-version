@@ -1,5 +1,5 @@
 import Investigaciones from '@/assets/images/investigaciones.jpg';
-import InvestigacionesPrivadas from '@/assets/images/investigaciones-privadas.png';
+import InvestigacionesPrivadas from '@/assets/images/Investigaciones-privadas.png';
 import { Reveal } from '@/components/animation/Reveal';
 import Image from 'next/image';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
