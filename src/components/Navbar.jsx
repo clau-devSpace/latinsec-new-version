@@ -25,7 +25,7 @@ export const Navbar = () => {
         </div>
 
         {/* Menú Desktop - Centrado */}
-        <ul className="lg:flex hidden items-center justify-center gap-8 text-[15px] font-medium text-[#0e2c66]">
+        <ul className="lg:flex hidden items-center justify-center gap-5 text-[15px] font-medium text-[#0e2c66]">
           <li>
             <a
               href="/"
@@ -56,7 +56,7 @@ export const Navbar = () => {
                   href="/custodia-de-mercaderia"
                   className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
                 >
-                  Custodia de mercadería
+                  Seguridad electrónica
                 </a>
               </li>
               <li>
@@ -64,7 +64,7 @@ export const Navbar = () => {
                   href="/seguridad-electronica"
                   className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
                 >
-                  Seguridad electrónica
+                  Custodia de mercadería en tránsito
                 </a>
               </li>
               <li>
@@ -83,6 +83,38 @@ export const Navbar = () => {
                   Asesoramiento y consultoría
                 </a>
               </li>
+               <li>
+                <a
+                  href="/asesoramiento-y-consultoria"
+                  className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                  Servicio de Tótems
+                </a>
+              </li>
+               <li>
+                <a
+                  href="/asesoramiento-y-consultoria"
+                  className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                 Patrullaje con robots autónomos y drones
+                </a>
+              </li>
+               <li>
+                <a
+                  href="/asesoramiento-y-consultoria"
+                  className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                  Seguridad bancaria
+                </a>
+              </li>
+               <li>
+                <a
+                  href="/asesoramiento-y-consultoria"
+                  className="block p-1 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                  Seguridad armada
+                </a>
+              </li>
             </ul>
           </li>
 
@@ -98,7 +130,7 @@ export const Navbar = () => {
           <li>
             <a
               href="/contacto"
-              className="font-semibold bg-[#e63946] text-white rounded-full py-2 px-6 hover:bg-[#d62839] transition-colors shadow-[0_15px_35px_rgba(230,57,70,0.35)]"
+              className=" text-[#e63946] relative py-2 hover:after:w-full after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#e63946] after:transition-all after:duration-300"
             >
               Contacto
             </a>
