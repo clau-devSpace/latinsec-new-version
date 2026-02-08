@@ -85,7 +85,7 @@ export const Navbar = () => {
               </li>
                <li>
                 <a
-                  href="/asesoramiento-y-consultoria"
+                  href="/servicio-de-totem"
                   className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
                 >
                   Servicio de Tótems
@@ -93,7 +93,7 @@ export const Navbar = () => {
               </li>
                <li>
                 <a
-                  href="/asesoramiento-y-consultoria"
+                  href="/seguridad-robots-y-drones"
                   className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
                 >
                  Patrullaje con robots autónomos y drones
@@ -101,7 +101,7 @@ export const Navbar = () => {
               </li>
                <li>
                 <a
-                  href="/asesoramiento-y-consultoria"
+                  href="/seguridad-bancaria"
                   className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
                 >
                   Seguridad bancaria

@@ -31,12 +31,11 @@ import Elec from '@/assets/images/control-accesos.png';
 import Custodia from '@/assets/images/imagen-escolta.png';
 import Consultoria from '@/assets/images/consultoria.jpg';
 import RobotsAutonomos from '@/assets/images/robots-autonomos.png';
-import SeguridadBancaria from '@/assets/images/seguridad-en-bancos.jpeg';
+import SeguridadBancaria from '@/assets/images/seguridad-bancaria-1.png';
 import Research from '@/assets/images/research.jpg';
 import Totem from '@/assets/images/totem-vigilador.png';
 import NuevaPortada from '@/assets/images/imagen-nueva-uniforme-gris.png'
-
-
+import GuardiaSeguridad from '@/assets/images/seguridad-fisica-guardia-1.png';
 
 const Home = () => {
   return (
@@ -165,7 +164,7 @@ const Home = () => {
           <h3 className="text-white text-[18px] font-medium">Seguridad Física</h3>
         </div>
         <img
-          src={Fisic.src}
+          src={GuardiaSeguridad.src}
           alt="Investigación"
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         />
