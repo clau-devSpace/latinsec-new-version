@@ -34,7 +34,7 @@ import RobotsAutonomos from '@/assets/images/robots-autonomos.png';
 import SeguridadBancaria from '@/assets/images/seguridad-bancaria-1.png';
 import Research from '@/assets/images/research.jpg';
 import Totem from '@/assets/images/totem-vigilador.png';
-import NuevaPortada from '@/assets/images/imagen-nueva-uniforme-gris.png'
+import NuevaPortada from '@/assets/images/imageb-portada-mejorada.png';
 import GuardiaSeguridad from '@/assets/images/seguridad-fisica-guardia-1.png';
 
 const Home = () => {
@@ -42,7 +42,7 @@ const Home = () => {
     <main className="z-10 relative">
       {/*<ChatBot />*/}
       <WhatsAppButton />
-     <section className="relative min-h-screen overflow-hidden bg-gradient-to-l from-[#2a4a6c]/30 to-[#3d6db0]/20">
+     <section className="relative min-h-screen overflow-hidden bg-gradient-to-l from-[#2a4a6c]/45 to-[#3d6db0]/20">
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-[1]">
         <img 
@@ -76,8 +76,8 @@ const Home = () => {
       {/* Contenido del hero */}
       <div className="relative z-[3] h-screen flex items-center text-white px-4 pl-8 md:pl-16 lg:pl-24 xl:pl-32">
         <div className="flex flex-col gap-3 max-w-[800px]">
-          <h1 className="xl:text-[52px] lg:text-5xl text-3xl font-bold pt-20">
-            Tu{" "}
+          <h1 className="xl:text-[52px] lg:text-6xl text-4xl font-bold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)]">
+            Tu {/*{" "}
             <Typewriter
               words={["protección"]}
               loop={5}
@@ -86,12 +86,13 @@ const Home = () => {
               typeSpeed={100}
               deleteSpeed={80}
               delaySpeed={2000}
-            />{" "}
-            es nuestra especialidad
+            />{" "}*/}
+             <span className='text-[#e6272d]'>Protección</span> es nuestra Especialidad
           </h1>
           <p className="font-regular xl:text-xl lg:text-lg text-md max-w-md text-[#dbe4ff]">
             +29 años de trayectoria avalan nuestra experiencia.
           </p>
+          <button>Conocer servicios</button>
         </div>
       </div>
     </section>
@@ -165,7 +166,7 @@ const Home = () => {
         </div>
         <img
           src={GuardiaSeguridad.src}
-          alt="Investigación"
+          alt="Seguridad Fisica"
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/15 to-transparent"></div>
@@ -174,7 +175,7 @@ const Home = () => {
              Personal de seguridad altamente capacitado
           </p>
           <a
-            href="/investigaciones"
+            href="/seguridad-fisica"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -198,7 +199,7 @@ const Home = () => {
             Tecnología de última generación con IA aplicada
           </p>
           <a
-            href="/seguridad-fisica"
+            href="/seguridad-electronica"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -248,7 +249,7 @@ const Home = () => {
             Investigaciones con enfoques únicos en cada caso
           </p>
           <a
-            href="/servicio-de-toten"
+            href="/investigaciones"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -285,7 +286,7 @@ const Home = () => {
             Asesorías integrales en Seguridad
           </p>
           <a
-            href="/seguridad-bancaria"
+            href="/asesoramiento-y-consultoria"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -333,7 +334,7 @@ const Home = () => {
             Sistema de control de rondas y vigilancia
           </p>
           <a
-            href="#"
+            href="/seguridad-robots-y-drones"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -350,7 +351,7 @@ const Home = () => {
         </div>
         <img
           src={SeguridadBancaria.src}
-          alt="Seguridad Electrónica"
+          alt="Seguridad bancaria"
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
@@ -359,7 +360,7 @@ const Home = () => {
             Protección integral para entidades financieras
           </p>
           <a
-            href="/seguridad-electronica"
+            href="/seguridad-bancaria"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />

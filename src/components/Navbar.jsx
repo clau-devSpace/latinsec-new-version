@@ -53,7 +53,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/custodia-de-mercaderia"
+                  href="/seguridad-electronica"
                   className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
                 >
                   Seguridad electrónica
@@ -61,7 +61,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/seguridad-electronica"
+                  href="/custodia-de-mercaderia"
                   className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
                 >
                   Custodia de mercadería en tránsito
@@ -109,7 +109,7 @@ export const Navbar = () => {
               </li>
                <li>
                 <a
-                  href="/asesoramiento-y-consultoria"
+                  href="#"
                   className="block p-1 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
                 >
                   Seguridad armada
@@ -139,14 +139,14 @@ export const Navbar = () => {
 
         {/* Puntos decorativos - Desktop */}
         <div className="lg:flex hidden gap-3 text-[#0e2c66] opacity-60">
-          <a href="#">
-            <FaInstagram className="w-4 h-4 hover:text-[#e63946]" />
+          <a href="#" className='bg-[#07142A] rounded-full p-2'>
+            <FaInstagram className="w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>
-          <a href="#">
-            <FaFacebookF className="w-4 h-4 hover:text-[#e63946]" />
+          <a href="#" className='bg-[#07142A] rounded-full p-2'>
+            <FaFacebookF className="w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>
-          <a href="#">
-            <FaLinkedinIn className="w-4 h-4 hover:text-[#e63946]" />
+          <a href="#" className='bg-[#07142A] rounded-full p-2'>
+            <FaLinkedinIn className=" w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>
         </div>
 

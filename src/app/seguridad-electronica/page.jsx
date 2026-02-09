@@ -264,38 +264,25 @@ export default function Page() {
             />
 
             {/* HERO */}
-            <div className="relative w-full">
+            <section className="bg-[#FAFAFA] relative h-screen">
                 <Image
                     src={SeguridadElectronica}
                     alt="Seguridad Electrónica"
-                    priority
-                    className="w-full h-auto"
-                    sizes="100vw"
+                    fill
+                    className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/45" />
-
-                <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-6 text-center">
-                    <div className="max-w-4xl">
-                        <AEText
-                            text="Seguridad Electrónica"
-                            as="h1"
-                            seed={2026}
-                            baseDelay={120}
-                            step={28}
-                            className="text-white font-extrabold text-3xl md:text-6xl leading-tight drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
-                        />
-
-                        <AEText
-                            text="Equipos de seguridad de alta tecnología con monitoreo remoto las 24 horas del día, los 365 días del año."
-                            as="p"
-                            seed={909}
-                            baseDelay={820}
-                            step={7}
-                            className="mt-3 text-white/90 text-sm md:text-base leading-relaxed"
-                        />
+                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 flex items-center">
+                    <div className="max-w-5xl mx-auto w-full px-5">
+                        <h1 className="text-white text-3xl md:text-6xl leading-tight drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)] font-bold">
+                            Seguridad Electrónica
+                        </h1>
+                        <p className="text-white/90 py-3 drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)] text-sm md:text-base leading-relaxed">
+                            Equipos de seguridad de alta tecnología con monitoreo remoto las 24 horas del día, los 365 días del año.
+                        </p>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <div className="max-w-5xl mx-auto px-4 sm:px-6 py-14 md:py-16">
                 <Reveal hiddenValue={{ opacity: 0, x: 75 }}>
