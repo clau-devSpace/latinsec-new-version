@@ -76,7 +76,7 @@ const Home = () => {
       {/* Contenido del hero */}
       <div className="relative z-[3] h-screen flex items-center text-white px-4 pl-8 md:pl-16 lg:pl-24 xl:pl-32">
         <div className="flex flex-col gap-3 max-w-[800px]">
-          <h1 className="xl:text-[52px] lg:text-6xl text-4xl font-bold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)]">
+          <h1 className="xl:text-[52px] lg:text-6xl text-4xl font-extrabold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)]">
             Tu {/*{" "}
             <Typewriter
               words={["protección"]}
@@ -87,12 +87,12 @@ const Home = () => {
               deleteSpeed={80}
               delaySpeed={2000}
             />{" "}*/}
-             <span className='text-[#e6272d]'>Protección</span> es nuestra Especialidad
+             Protección es nuestra Especialidad
           </h1>
-          <p className="font-regular xl:text-xl lg:text-lg text-md max-w-md text-[#dbe4ff]">
+          <p className="font-regular xl:text-xl lg:text-lg text-md max-w-md text-[#ffffff]">
             +29 años de trayectoria avalan nuestra experiencia.
           </p>
-          <button>Conocer servicios</button>
+          <a href='#nuestros-servicios'><button className="font-regular xl:text-xl lg:text-lg text-md w-fit text-[#dbe4ff] bg-[#e63946] rounded-lg px-4 py-2">Conocer servicios</button></a>
         </div>
       </div>
     </section>
@@ -115,10 +115,10 @@ const Home = () => {
             </span>
             <div>
               <span className="font-bold text-[24px] text-[#252B42]">
-                +<CountUp end={250} duration={5} />
+                +<CountUp end={450} duration={5} />
               </span>
               <p className="font-semibold text-sm text-[#737373]">
-                Clientes felices
+                Clientes satisfechos
               </p>
             </div>
           </div>
@@ -141,7 +141,7 @@ const Home = () => {
 <section className="bg-white py-16">
   <div className="max-w-7xl mx-auto px-5">
     <div className="text-center max-w-xl mx-auto mb-14">
-      <h2 className="text-[38px] font-bold text-[#07142A]">
+      <h2 className="text-[38px] font-bold text-[#07142A]" id='nuestros-servicios'>
         Nuestros Servicios
       </h2>
       <p className="text-[#737373] mt-3">
