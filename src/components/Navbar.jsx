@@ -109,7 +109,7 @@ export const Navbar = () => {
               </li>
                <li>
                 <a
-                  href="#"
+                  href="/seguridad-armada"
                   className="block p-1 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
                 >
                   Seguridad armada

@@ -3,7 +3,8 @@ import { Reveal } from "@/components/animation/Reveal";
 import {Dot, Check} from 'lucide-react';
 import Image from "next/image";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import CustodiaDeMercaderia from "@/assets/images/imagen-escolta.png";
+import Totem from "@/assets/images/Totem-fondo-2.png";
+import TotemDescripcion from "@/assets/images/totem-descripcion.png";
 
 const page = () => {
   return (
@@ -12,8 +13,8 @@ const page = () => {
         <WhatsAppButton />
 
         <Image
-          src={CustodiaDeMercaderia}
-          alt="Imagen Escolta de Camion con Auto LatinSec"
+          src={Totem}
+          alt="Imagen Totem de Seguridad de LatinSec"
           fill
           className="object-cover"
         />
@@ -24,9 +25,7 @@ const page = () => {
               Tótem de Seguridad
             </h1>
             <p className="text-white italic py-3 drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem accusantium repellat, voluptate fugit quasi
-              laborum.
+              El ojo humano y la tecnología se juntan para brindar un servicio de seguridad 360°
             </p>
           </div>
         </div>
@@ -60,8 +59,8 @@ const page = () => {
                 {/* Columna de imagen */}
                 <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
                   <Image
-                    src={Custodia}
-                    alt="Custodia de mercadería"
+                    src={TotemDescripcion}
+                    alt="Totem de Seguridad LatinSec"
                     fill
                     className="object-cover"
                   />
@@ -81,9 +80,10 @@ const page = () => {
               </div>
 
               {/* Sección de lista */}
+   
               <div>
                 <h3 className="text-[#252B42] text-2xl font-semibold mb-6">
-                  Nuestro servicio de custodia puede aplicarse en:
+                  Nuestro servicio de custodia con Totems puede aplicarse en:
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2 text-[#4B5563]">
