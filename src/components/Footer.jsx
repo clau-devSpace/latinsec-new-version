@@ -1,80 +1,57 @@
 import Logo from '@/assets/images/logo.png';
-import {
-  FacebookIcon,
-  InstagramIcon,
-  TwitterIcon,
-  YoutubeIcon,
-} from '@/assets/icons';
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import Image from 'next/image';
+
 export const Footer = () => {
   return (
     <footer className="z-10 bg-[#FAFAFA]">
-      <div className="max-w-7xl mx-auto grid xl:grid-cols-4 gap-10 px-5 py-12">
-        <div className="w-80">
-          <Image src={Logo} alt="" />
+      <div className="max-w-7xl mx-auto grid xl:grid-cols-3 gap-10 px-5 py-12 items-start justify-items-center">
+
+        {/* Logo y derechos */}
+        <div className="flex flex-col items-center text-center gap-2">
+          <Image src={Logo} alt="Logo" width={200} />
           <p className="text-sm">
-            &copy; Derechos reservados latinsec. Diseñado por ...
+            &copy; Derechos reservados Latinsec. 
           </p>
-          <p className="text-sm mt-2">
-            Fraga 1119, Ciudad Autónoma de Buenos Aires
-          </p>
-          <a href="https://www.google.com/maps/place/Fraga+1119,+CABA" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-500">
+          <a
+            href="https://www.google.com/maps/place/Fraga+1119,+CABA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-blue-500"
+          >
             Ver en Google Maps
           </a>
         </div>
-        <div className='lg:ml-16'>
-          <h2 className="text-[#252B42] font-bold text-2xl">Servicios</h2>
-          <ul className="mt-3 flex flex-col gap-2 text-[#737373] font-semibold text-sm">
-            <li>
-              <a href="/seguridad-fisica">Seguridad física</a>
-            </li>
-            <li>
-              <a href="/custodia-de-mercaderia">Custodia de mercadería</a>
-            </li>
-            <li>
-              <a href="/seguridad-electronica">Seguridad electrónica</a>
-            </li>
-            <li>
-              <a href="/investigaciones">Investigaciones</a>
-            </li>
-            <li>
-              <a href="/asesoramiento-y-consultoria">Asesoramiento y consultoría</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 className="text-[#252B42] font-bold text-2xl">Empresa</h2>
-          <ul className="mt-3 text-[#737373] font-semibold  text-sm">
-            <li>
-              <a href="/latinsec">Sobre la empresa</a>
-            </li>
-          </ul>
-          {/* Nueva sección de contactos */}
-          <h2 className="text-[#252B42] font-bold text-2xl mt-6">Nuestros contactos</h2>
-          <div className="mt-4 text-sm text-[#737373]">
+
+        {/* Contacto */}
+        <div className="flex flex-col items-center text-center gap-2">
+          <h2 className="text-[#252B42] font-bold text-2xl">Contacto</h2>
+          <div className="mt-2 text-sm text-[#737373] flex flex-col gap-1">
             <p>Email: comercial@latinsec.com</p>
             <p>Teléfono: 5219-1638</p>
             <p>WhatsApp: +54-9-11-5765-1676</p>
           </div>
         </div>
-        <div>
+
+        {/* Redes */}
+        <div className="flex flex-col items-center text-center gap-2">
           <h2 className="text-[#252B42] font-bold text-2xl">Nuestras redes</h2>
-          <p className="text-[#737373] font-semibold text-sm w-44">
-            Siganos en nuestras redes sociales para estar al tanto de latinsec
+          <p className="text-[#737373] font-semibold text-sm">
+            Seguinos en nuestras redes sociales
           </p>
-          <div className="mt-3 flex text-2xl gap-3">
-            <a href="https://www.facebook.com/SeguridadLatinSec/" className="hover:scale-110 transition-transform">
-              <span>
-                <FacebookIcon />
-              </span>
-            </a>
-            <a href="https://www.instagram.com/latinsec_seguridad/" className="hover:scale-110 transition-transform">
-              <span>
-                <InstagramIcon />
-              </span>
-            </a>
+          <div className="mt-1 flex text-2xl gap-3">
+             <a href="#" className='bg-[#07142A] rounded-full p-2'>
+            <FaInstagram className="w-4 h-4 text-[#fff] hover:text-[#e63946]" />
+          </a>
+          <a href="#" className='bg-[#07142A] rounded-full p-2'>
+            <FaFacebookF className="w-4 h-4 text-[#fff] hover:text-[#e63946]" />
+          </a>
+          <a href="#" className='bg-[#07142A] rounded-full p-2'>
+            <FaLinkedinIn className=" w-4 h-4 text-[#fff] hover:text-[#e63946]" />
+          </a>
           </div>
         </div>
+
       </div>
     </footer>
   );

@@ -138,7 +138,7 @@ export const Navbar = () => {
         </ul>
 
         {/* Puntos decorativos - Desktop */}
-        <div className="lg:flex hidden gap-3 text-[#0e2c66] opacity-60">
+        <div className="lg:flex hidden gap-3 text-[#0e2c66]">
           <a href="#" className='bg-[#07142A] rounded-full p-2'>
             <FaInstagram className="w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>

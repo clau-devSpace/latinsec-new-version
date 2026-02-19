@@ -60,7 +60,7 @@ const TitleWithIcon = ({ icon: Icon, title }) => (
         <span className="mt-[2px] inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/20">
             <Icon className="text-white" size={22} strokeWidth={2.2} />
         </span>
-        <h3 className="text-white text-xl md:text-2xl font-extrabold leading-tight">
+        <h3 className="text-[#07142A] text-xl md:text-2xl font-extrabold leading-tight">
             {title}
         </h3>
     </div>
@@ -177,7 +177,7 @@ export default function Page() {
                     fill
                     className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 bg-black/30" />
                 <div className="absolute inset-0 flex items-center">
                     <div className="max-w-5xl mx-auto w-full px-5">
                         <h1 className="text-white text-3xl md:text-6xl leading-tight drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)] font-bold">
@@ -193,7 +193,7 @@ export default function Page() {
             {/* ========== SECCIÓN: Protección Integral ========== */}
             <div className="max-w-5xl mx-auto px-5 py-20">
                 <Reveal hiddenValue={{ opacity: 0, y: 40 }}>
-                    <h2 className="text-[#252B42] text-3xl md:text-4xl font-bold text-center">
+                    <h2 className="text-[#07142A] text-3xl md:text-4xl font-bold text-center">
                         Protección Integral para tu Operación
                     </h2>
                     <p className="text-[#5b5b5b] text-center mt-3 max-w-2xl mx-auto">
@@ -219,10 +219,10 @@ export default function Page() {
             </div>
 
             {/* ========== SECCIÓN: Soluciones por Sector ========== */}
-            <div className="bg-gradient-to-br from-[#1e293b] via-[#1e293b] to-[#0f172a]">
+            <div>
                 <div className="max-w-5xl mx-auto px-5 py-16">
                     <Reveal hiddenValue={{ opacity: 0, y: 40 }}>
-                        <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-12">
+                        <h2 className="text-[#07142A] text-3xl md:text-4xl font-bold text-center mb-12">
                             Soluciones por Sector
                         </h2>
                     </Reveal>
@@ -248,13 +248,13 @@ export default function Page() {
                                         title="Seguridad Corporativa y Comercial"
                                     />
 
-                                    <p className="text-white/85 mt-3">
+                                    <p className="text-[#07142A] font-semibold mt-3">
                                         Resguardo de edificios, oficinas y
                                         centros comerciales con controles de
                                         acceso y presencia visible.
                                     </p>
 
-                                    <ul className="mt-6 space-y-3 text-white/90 text-sm md:text-base">
+                                    <ul className="mt-6 space-y-3 text-[#4B5563] text-sm md:text-base">
                                         {[
                                             {
                                                 icon: Users,
@@ -290,7 +290,7 @@ export default function Page() {
                                         ))}
                                     </ul>
 
-                                    <p className="text-white/80 mt-5 text-sm leading-relaxed">
+                                    <p className="text-[#4B5563] mt-5 text-sm leading-relaxed">
                                         Diseñamos cada esquema de seguridad en
                                         función del flujo de personas, horarios y
                                         requerimientos operativos.
@@ -308,13 +308,13 @@ export default function Page() {
                                         title="Vigilancia en Barrios Cerrados"
                                     />
 
-                                    <p className="text-white/85 mt-3">
+                                    <p className="text-[#07142A] font-semibold mt-3">
                                         Seguridad preventiva en urbanizaciones,
                                         con presencia activa y tecnología de
                                         respaldo.
                                     </p>
 
-                                    <ul className="mt-6 space-y-3 text-white/90 text-sm md:text-base">
+                                    <ul className="mt-6 space-y-3 text-[#4B5563] text-sm md:text-base">
                                         {[
                                             {
                                                 icon: Fence,
@@ -350,7 +350,7 @@ export default function Page() {
                                         ))}
                                     </ul>
 
-                                    <p className="text-white/80 mt-5 text-sm leading-relaxed">
+                                    <p className="text-[#4B5563] font-semibold mt-5 text-sm leading-relaxed">
                                         Nuestro equipo trabaja con
                                         procedimientos claros y supervisión
                                         constante para mantener un entorno
@@ -390,13 +390,13 @@ export default function Page() {
                                         title="Soluciones para Empresas e Industrias"
                                     />
 
-                                    <p className="text-white/85 mt-3">
+                                    <p className="text-[#07142A] mt-3 font-semibold">
                                         Planes de seguridad adaptados a
                                         operaciones industriales, logística,
                                         comercios y edificios.
                                     </p>
 
-                                    <ul className="mt-6 space-y-3 text-white/90 text-sm md:text-base">
+                                    <ul className="mt-6 space-y-3 text-[#4B5563] text-sm md:text-base">
                                         {[
                                             {
                                                 icon: Factory,
@@ -432,7 +432,7 @@ export default function Page() {
                                         ))}
                                     </ul>
 
-                                    <p className="text-white/80 mt-5 text-sm leading-relaxed">
+                                    <p className="text-[#4B5563] font-semibold mt-5 text-sm leading-relaxed">
                                         Analizamos el entorno, definimos puntos
                                         de control y aplicamos un esquema de
                                         supervisión para sostener la continuidad
@@ -454,13 +454,13 @@ export default function Page() {
                                         title="Protección y Vigilancia Personal"
                                     />
 
-                                    <p className="text-white/85 mt-3">
+                                    <p className="text-[#07142A] mt-3 font-semibold">
                                         Custodia preventiva para ejecutivos,
                                         personalidades públicas y situaciones de
                                         exposición.
                                     </p>
 
-                                    <ul className="mt-6 space-y-3 text-white/90 text-sm md:text-base">
+                                    <ul className="mt-6 space-y-3 text-[#4B5563] text-sm md:text-base">
                                         {[
                                             {
                                                 icon: UserCheck,
@@ -492,7 +492,7 @@ export default function Page() {
                                         ))}
                                     </ul>
 
-                                    <p className="text-white/80 mt-5 text-sm leading-relaxed">
+                                    <p className="text-[#4B5563] font-semibold mt-5 text-sm leading-relaxed">
                                         Nuestro objetivo es brindar tranquilidad
                                         y confianza con protocolos claros y
                                         respuesta coordinada.

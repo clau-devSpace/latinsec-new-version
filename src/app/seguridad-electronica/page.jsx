@@ -102,20 +102,20 @@ const SectionTitle = ({ Icon, title }) => (
         <span className="mt-[2px] inline-flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 ring-1 ring-white/15">
             <Icon className="h-5 w-5 text-white" strokeWidth={2.2} />
         </span>
-        <h3 className="text-white text-xl md:text-2xl font-extrabold">
+        <h3 className="text-[#07142A] text-xl md:text-2xl font-extrabold">
             {title}
         </h3>
     </div>
 );
 
 const BulletList = ({ items }) => (
-    <ul className="mt-6 space-y-3 text-white/90 text-sm md:text-base">
+    <ul className="mt-6 space-y-3 text-[#4B5563] text-sm md:text-base">
         {items.map((it) => (
             <li key={it.text} className="flex gap-3">
                 <RedCheck />
                 <span className="flex items-start gap-2">
                     <it.icon
-                        className="text-white mt-[2px]"
+                        className="text-[#e63946] mt-[2px]"
                         size={18}
                         strokeWidth={2.2}
                     />
@@ -179,12 +179,12 @@ export default function Page() {
     } = Icons;
 
     const features = [
-        { icon: Radar, label: "Monitoreo remoto", tint: "blue" },
-        { icon: BellRing, label: "Alertas inteligentes", tint: "amber" },
-        { icon: Video, label: "Video HD", tint: "purple" },
+        { icon: Radar, label: "Alarmas Monitoreadas", tint: "blue" },
+        { icon: BellRing, label: "Cercos Perimetrales Electrificados", tint: "amber" },
+        { icon: Video, label: "Sistemas de videovigilancia con analítica con IA Aplicada", tint: "purple" },
         { icon: Globe, label: "Acceso online", tint: "sky" },
-        { icon: Bot, label: "Rondas programadas", tint: "rose" },
-        { icon: DroneIcon, label: "Vigilancia con drones", tint: "emerald" },
+        { icon: Bot, label: "Control de rondas inteligentes", tint: "rose" },
+        { icon: DroneIcon, label: "Controles de acceso inteligente", tint: "emerald" },
     ];
 
     const alarmasBullets = [
@@ -318,14 +318,14 @@ export default function Page() {
             </div>
 
             {/* ESPECIALIDADES */}
-            <div className="bg-gradient-to-b from-[#0B3B8C] via-[#082f73] to-[#06285f]">
+            <div>
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
                     <Reveal hiddenValue={{ opacity: 0, y: 20 }}>
                         <div className="text-center mb-10 md:mb-12">
-                            <h2 className="text-white text-3xl md:text-5xl font-extrabold">
+                            <h2 className="text-[#07142A] text-3xl md:text-5xl font-extrabold">
                                 Nuestras Especialidades
                             </h2>
-                            <p className="text-white/85 mt-3 text-sm md:text-base">
+                            <p className="text-[#07142A] mt-3 text-sm md:text-base">
                                 Servicios de Seguridad Electrónica adaptados a
                                 diferentes sectores y necesidades.
                             </p>
@@ -341,7 +341,7 @@ export default function Page() {
                                         Icon={ShieldCheck}
                                         title="Sistemas de Alarmas Inteligentes"
                                     />
-                                    <p className="text-white/85 mt-3 text-sm md:text-base">
+                                    <p className="text-[#07142A] mt-3 text-sm md:text-base">
                                         Tecnología de última generación para la
                                         detección temprana de intrusos y
                                         protección integral.
@@ -374,7 +374,7 @@ export default function Page() {
                                         Icon={Cctv}
                                         title="Cámaras de Seguridad"
                                     />
-                                    <p className="text-white/85 mt-3 text-sm md:text-base">
+                                    <p className="text-[#07142A] mt-3 text-sm md:text-base">
                                         Cámaras IP/CCTV con acceso remoto para
                                         monitoreo continuo.
                                     </p>
@@ -391,7 +391,7 @@ export default function Page() {
                                         Icon={MonitorSmartphone}
                                         title="Totem Vigilador Virtual"
                                     />
-                                    <p className="text-white/85 mt-3 text-sm md:text-base">
+                                    <p className="text-[#07142A] mt-3 text-sm md:text-base">
                                         Combina tecnologías avanzadas y un
                                         diseño robusto para brindar máxima
                                         seguridad.
@@ -424,7 +424,7 @@ export default function Page() {
                                         Icon={Fingerprint}
                                         title="Control de Accesos Biométrico y Digital"
                                     />
-                                    <p className="text-white/85 mt-3 text-sm md:text-base">
+                                    <p className="text-[#07142A] mt-3 text-sm md:text-base">
                                         Sistemas avanzados con múltiples métodos
                                         de identificación.
                                     </p>

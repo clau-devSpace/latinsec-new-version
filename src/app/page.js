@@ -34,7 +34,7 @@ import RobotsAutonomos from '@/assets/images/robots-autonomos.png';
 import SeguridadBancaria from '@/assets/images/seguridad-bancaria-1.png';
 import Research from '@/assets/images/research.jpg';
 import Totem from '@/assets/images/totem-vigilador.png';
-import NuevaPortada from '@/assets/images/imageb-portada-mejorada.png';
+import NuevaPortada from '@/assets/images/nuevo-diseño-portada.png';
 import GuardiaSeguridad from '@/assets/images/seguridad-fisica-guardia-1.png';
 
 const Home = () => {
@@ -161,8 +161,8 @@ const Home = () => {
     >
       {/* Seguridad Fisica */}
       <div className="group relative h-[340px] rounded-2xl overflow-hidden shadow-md">
-        <div className="absolute top-0 left-0 right-0 z-10 px-5 py-5 text-center">
-          <h3 className="text-white text-[18px] font-medium">Seguridad Física</h3>
+        <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/70 px-5 py-2">
+          <h3 className="text-white text-base font-medium">Seguridad Física</h3>
         </div>
         <img
           src={GuardiaSeguridad.src}
@@ -185,8 +185,8 @@ const Home = () => {
 
       {/* Seguridad Electronica */}
       <div className="group relative h-[340px] rounded-2xl overflow-hidden shadow-md">
-        <div className="absolute top-0 left-0 right-0 z-10 px-5 py-5 text-center">
-          <h3 className="text-white text-[18px] font-medium">Seguridad Electrónica</h3>
+        <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/70 px-5 py-2">
+          <h3 className="text-white text-base font-medium">Seguridad Electrónica</h3>
         </div>
         <img
           src={Elec.src}
@@ -310,7 +310,7 @@ const Home = () => {
             Tótems de Seguridad con tecnología de vanguardia
           </p>
           <a
-            href="#"
+            href="/servicio-de-totem"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -376,12 +376,11 @@ const Home = () => {
     <Reveal>
       <div className="text-center max-w-4xl px-5 mx-auto">
         <h3 className="text-[#07142A] font-bold text-[40px] mb-4">
-          <span className="text-[#0263A5]">Latin</span>
-          <span className="text-[#FF0000]">Sec</span>
+          Sobre Nosotros
         </h3>
 
         <p className="text-[#4B5563] font-regular text-base md:text-lg leading-relaxed">
-        Con 27 años de trayectoria, somos una empresa de seguridad dedicada a la protección de personas, bienes e información. A lo largo de nuestra historia hemos trabajado con clientes de primer nivel, construyendo relaciones basadas en la confianza, el compromiso y el profesionalismo.
+        Con 29 años de trayectoria, somos una empresa de seguridad dedicada a la protección de personas, bienes e información. A lo largo de nuestra historia hemos trabajado con clientes de primer nivel, construyendo relaciones basadas en la confianza, el compromiso y el profesionalismo.
         </p>
 
         <p className="text-[#4B5563] font-regular text-base md:text-lg leading-relaxed mt-4">
@@ -391,6 +390,19 @@ const Home = () => {
     </Reveal>
   </div>
 </section>
+
+       <section className="bg-[#FAFAFA] py-10 px-5">
+        <div className="text-center">
+          <h3 className="text-[#252B42] font-bold text-[32px]">
+            Compañías con la que trabaja{" "}
+            <span className="text-[#0263A5]">Latin</span>
+            <span className="text-[#FF0000]">Sec</span>
+          </h3>
+        </div>
+        <div className="mt-10">
+          <SwiperCompanies data={DataCompanies} />
+        </div>
+      </section>
 
       <section className="bg-[#0263A5] py-10 px-5">
         <div className="text-center max-w-xl mx-auto">
@@ -405,18 +417,7 @@ const Home = () => {
           <SwiperComponent />
         </div>
       </section>
-      <section className="bg-[#FAFAFA] py-10 px-5">
-        <div className="text-center">
-          <h3 className="text-[#252B42] font-bold text-[32px]">
-            Compañías con la que trabaja{" "}
-            <span className="text-[#0263A5]">Latin</span>
-            <span className="text-[#FF0000]">Sec</span>
-          </h3>
-        </div>
-        <div className="mt-10">
-          <SwiperCompanies data={DataCompanies} />
-        </div>
-      </section>
+     
       <section className="bg-[#FAFAFA] pt-16 pb-20 text-white px-5">
         <div className="max-w-5xl mx-auto lg:flex items-center gap-5">
           <Reveal hiddenValue={{ opacity: 0, x: -75 }}>
