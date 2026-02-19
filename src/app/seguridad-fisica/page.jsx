@@ -3,7 +3,7 @@ import { Reveal } from "@/components/animation/Reveal";
 import Image from "next/image";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import SeguridadFisicaCorporativa from "@/assets/images/seguridad-fisica-guardia-3.png";
-import SeguridadBarriosCerrados from '@/assets/images/seguridad-fisica-guardia-2.png';
+import SeguridadBarriosCerrados from '@/assets/images/seguridad-fisica-barrios.png';
 import CustodiaPersonal from '@/assets/images/custodia-personal.jpg';
 import SeguridadIndustrial from '@/assets/images/seguridad-industrias.jpeg';
 
@@ -511,22 +511,6 @@ export default function Page() {
                             </Reveal>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div className="bg-white">
-                <div className="max-w-5xl mx-auto px-5 py-14 text-center">
-                    <h3 className="text-[#252B42] text-2xl md:text-3xl font-bold">
-                        ¿Necesitas servicios de seguridad profesional?
-                    </h3>
-                    <p className="text-[#5b5b5b] mt-3 max-w-2xl mx-auto">
-                        Podemos armar un plan según tu necesidad: empresa,
-                        industria, urbanización o custodia personal.
-                    </p>
-
-                    <button className="mt-6 bg-red-600 hover:bg-red-700 text-white font-semibold px-7 py-3 rounded-full transition">
-                        Contáctanos
-                    </button>
                 </div>
             </div>
         </section>

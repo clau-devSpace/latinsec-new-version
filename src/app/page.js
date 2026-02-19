@@ -34,7 +34,7 @@ import RobotsAutonomos from '@/assets/images/robots-autonomos.png';
 import SeguridadBancaria from '@/assets/images/seguridad-bancaria-1.png';
 import Research from '@/assets/images/research.jpg';
 import Totem from '@/assets/images/totem-vigilador.png';
-import NuevaPortada from '@/assets/images/nuevo-diseño-portada.png';
+import NuevaPortada from '@/assets/images/nuevo-diseño-portada-2.png';
 import GuardiaSeguridad from '@/assets/images/seguridad-fisica-guardia-1.png';
 
 const Home = () => {
@@ -51,18 +51,18 @@ const Home = () => {
           className="w-full h-full object-cover object-right"
         />
         {/* Overlay azul unificador */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07142a]/45 via-[#07142a]/35 to-[#07142a]/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#07142a]/25 via-[#07142a]/10 to-[#07142a]/"></div>
       </div>
 
-      {/* Shapes geométricos */}
+      {/* Shapes geométricos 
       <div className="absolute w-[520px] h-[520px] bg-white/5 rounded-[60px] rotate-[20deg] top-[-160px] right-[120px] z-[2]"></div>
       <div className="absolute w-[420px] h-[420px] bg-white/5 rounded-[60px] -rotate-[25deg] bottom-[-200px] left-[-140px] z-[2]"></div>
       <div className="absolute w-[380px] h-[380px] bg-white/[0.04] rounded-[60px] rotate-[20deg] top-[120px] right-[380px] z-[2] blur-[2px]"></div>
       <div className="absolute w-[260px] h-[260px] bg-[#e63946]/[0.08] rounded-[60px] -rotate-[15deg] bottom-[160px] right-[120px] z-[2]"></div>
-      <div className="absolute w-[600px] h-[600px] bg-white/[0.03] rounded-[60px] rotate-[30deg] bottom-[-260px] right-[-200px] z-[2]"></div>
+      <div className="absolute w-[600px] h-[600px] bg-white/[0.03] rounded-[60px] rotate-[30deg] bottom-[-260px] right-[-200px] z-[2]"></div>*/}
 
-      {/* Panel diagonal */}
-      <div className="absolute inset-0 z-[2] pointer-events-none bg-gradient-to-br from-transparent via-white/5 to-transparent bg-[length:200%_200%] opacity-50"></div>
+      {/* Panel diagonal 
+      <div className="absolute inset-0 z-[2] pointer-events-none bg-gradient-to-br from-transparent via-white/5 to-transparent bg-[length:200%_200%] opacity-50"></div>*/}
 
       {/* Grid decorativa */}
       <div 
@@ -75,8 +75,8 @@ const Home = () => {
 
       {/* Contenido del hero */}
       <div className="relative z-[3] h-screen flex items-center text-white px-4 pl-8 md:pl-16 lg:pl-24 xl:pl-32">
-        <div className="flex flex-col gap-3 max-w-[800px]">
-          <h1 className="xl:text-[52px] lg:text-6xl text-4xl font-extrabold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)]">
+        <div className="flex flex-col gap-3 max-w-[1000px]">
+          <h1 className="xl:text-[42px] lg:text-6xl text-4xl font-bold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)]">
             Tu {/*{" "}
             <Typewriter
               words={["protección"]}
@@ -92,7 +92,7 @@ const Home = () => {
           <p className="font-regular xl:text-xl lg:text-lg text-md max-w-md text-[#ffffff]">
             +29 años de trayectoria avalan nuestra experiencia.
           </p>
-          <a href='#nuestros-servicios'><button className="font-regular xl:text-xl lg:text-lg text-md w-fit text-[#dbe4ff] bg-[#e63946] rounded-lg px-4 py-2">Conocer servicios</button></a>
+          <a href='#nuestros-servicios'><button className="font-regular xl:text-xl lg:text-lg text-md w-fit text-[#dbe4ff] bg-[#e63946] rounded-lg px-3 py-1">Conocer servicios</button></a>
         </div>
       </div>
     </section>
@@ -375,16 +375,16 @@ const Home = () => {
   <div className="max-w-5xl mx-auto">
     <Reveal>
       <div className="text-center max-w-4xl px-5 mx-auto">
-        <h3 className="text-[#07142A] font-bold text-[40px] mb-4">
+        <h3 className="text-[#0263A5] font-bold text-[40px] mb-4">
           Sobre Nosotros
         </h3>
 
-        <p className="text-[#4B5563] font-regular text-base md:text-lg leading-relaxed">
-        Con 29 años de trayectoria, somos una empresa de seguridad dedicada a la protección de personas, bienes e información. A lo largo de nuestra historia hemos trabajado con clientes de primer nivel, construyendo relaciones basadas en la confianza, el compromiso y el profesionalismo.
+        <p className="text-[#07142A] font-regular text-base md:text-lg leading-relaxed">
+        Con <strong>29 años de trayectoria</strong>, somos una empresa de seguridad dedicada a la <strong>protección de personas, bienes e información</strong>. A lo largo de nuestra historia hemos trabajado con clientes de primer nivel, construyendo relaciones basadas en la <strong>confianza, el compromiso y el profesionalismo.</strong>
         </p>
 
-        <p className="text-[#4B5563] font-regular text-base md:text-lg leading-relaxed mt-4">
-          Ofrecemos soluciones integrales de seguridad, combinando personal capacitado, tecnología confiable y procedimientos eficientes, adaptados a las necesidades de cada cliente. Nuestro enfoque es cercano y personalizado, con altos estándares de calidad y una mejora constante para responder a los nuevos desafíos del entorno.
+        <p className="text-[#07142A] font-regular text-base md:text-lg leading-relaxed mt-4">
+          Ofrecemos soluciones integrales de seguridad, combinando <strong>personal capacitado, tecnología confiable y procedimientos eficientes</strong>, adaptados a las necesidades de cada cliente. Nuestro enfoque es cercano y personalizado, con altos estándares de calidad y una mejora constante para responder a los nuevos desafíos del entorno.
         </p>
       </div>
     </Reveal>
@@ -393,10 +393,10 @@ const Home = () => {
 
        <section className="bg-[#FAFAFA] py-10 px-5">
         <div className="text-center">
-          <h3 className="text-[#252B42] font-bold text-[32px]">
+          <h3 className="text-[#07142A] font-bold text-[32px]">
             Compañías con la que trabaja{" "}
-            <span className="text-[#0263A5]">Latin</span>
-            <span className="text-[#FF0000]">Sec</span>
+            <span className="text-[#FF0000]">Latin</span>
+            <span className="text-[#0263A5]">Sec</span>
           </h3>
         </div>
         <div className="mt-10">

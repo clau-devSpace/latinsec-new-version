@@ -435,22 +435,6 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-
-            <div className="bg-white">
-                <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 md:py-14 text-center">
-                    <h3 className="text-[#252B42] text-2xl md:text-3xl font-bold">
-                        ¿Necesitas servicios de seguridad profesional?
-                    </h3>
-                    <p className="text-[#5b5b5b] mt-3 max-w-2xl mx-auto text-sm md:text-base">
-                        Con más de 23 años de experiencia, ofrecemos soluciones
-                        de seguridad personalizadas para empresas e industrias.
-                    </p>
-
-                    <button className="mt-6 bg-red-600 hover:bg-red-700 text-white font-semibold px-7 py-3 rounded-full transition">
-                        Contáctanos
-                    </button>
-                </div>
-            </div>
         </section>
     );
 }
