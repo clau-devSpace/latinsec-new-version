@@ -193,18 +193,19 @@ export const Navbar = () => {
                   >
                     Seguridad física
                   </a>
-                  <a
-                    href="/custodia-de-mercaderia"
-                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
-                  >
-                    Custodia de mercadería
-                  </a>
-                  <a
+                   <a
                     href="/seguridad-electronica"
                     className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
                   >
                     Seguridad electrónica
                   </a>
+                  <a
+                    href="/custodia-de-mercaderia"
+                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
+                  >
+                    Custodia de mercadería en tránsito
+                  </a>
+                 
                   <a
                     href="/investigaciones"
                     className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
