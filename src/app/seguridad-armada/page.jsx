@@ -43,7 +43,7 @@ const page = () => {
                   <h2 className="text-[#252B42] text-4xl font-bold mb-4">
                     Seguridad Armada
                   </h2>
-                  <p className="text-lg text-[#4B5563]">
+                  <p className="text-lg text-[#4B5563] text-justify">
                     Acorde a los requerimientos de cada cliente, brindamos
                     servicios de seguridad armada bajo estrictos criterios
                     profesionales y dentro del marco legal vigente. Nuestra

@@ -42,7 +42,7 @@ const page = () => {
                   <h2 className="text-[#252B42] text-4xl font-bold mb-4">
                     Robots Autónomos
                   </h2>
-                  <p className="text-lg text-[#4B5563]">
+                  <p className="text-lg text-[#4B5563] text-justify">
                     Incorporamos robots autónomos de patrullaje como una
                     solución innovadora que complementa la seguridad
                     tradicional. Estos sistemas permiten monitoreo constante,
@@ -81,7 +81,7 @@ const page = () => {
                   <h2 className="text-[#252B42] text-4xl font-bold mb-4">
                     Drones
                   </h2>
-                  <p className="text-lg text-[#4B5563]">
+                  <p className="text-lg text-[#4B5563] text-justify">
                    La seguridad con drones incorpora una visión aérea estratégica que amplía las capacidades de vigilancia y control. Esta tecnología permite realizar inspecciones rápidas, seguimiento visual y supervisión remota, aportando mayor alcance y agilidad operativa. Los drones se utilizan para observar, relevar y asistir en tareas de prevención, especialmente en espacios amplios o de acceso complejo. Su operación se integra a equipos humanos especializados, combinando innovación tecnológica, criterio profesional y una respuesta más eficiente ante distintas situaciones.
                   </p>
                 </div>

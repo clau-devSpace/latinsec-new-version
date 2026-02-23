@@ -42,7 +42,7 @@ const page = () => {
             <h2 className="text-[#252B42] text-4xl font-bold mb-4">
               Asesoramiento y consultoría
             </h2>
-            <p className="text-lg text-[#4B5563]">
+            <p className="text-lg text-[#4B5563] text-justify">
               Ofrecemos asesoramiento y consultoría en seguridad, orientados a
               analizar, prevenir y optimizar la protección de personas, bienes
               e información. Nuestro enfoque combina experiencia práctica,

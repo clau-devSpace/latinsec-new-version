@@ -41,7 +41,7 @@ const page = () => {
                   <h2 className="text-[#252B42] text-4xl font-bold mb-4">
                     Investigaciones
                   </h2>
-                  <p className="text-lg text-[#4B5563]">
+                  <p className="text-lg text-[#4B5563] text-justify">
                     En{" "}
                     <strong>
                       <span className="text-[#007bff]">Latin</span>

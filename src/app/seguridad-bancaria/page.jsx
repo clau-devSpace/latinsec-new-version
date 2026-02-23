@@ -42,7 +42,7 @@ const page = () => {
                   <h2 className="text-[#252B42] text-4xl font-bold mb-4">
                     Seguridad Bancaria
                   </h2>
-                  <p className="text-lg text-[#4B5563]">
+                  <p className="text-lg text-[#4B5563] text-justify">
                     Brindamos servicios de seguridad bancaria diseñados para
                     proteger personas, instalaciones y activos críticos,
                     cumpliendo con los más altos estándares del sector

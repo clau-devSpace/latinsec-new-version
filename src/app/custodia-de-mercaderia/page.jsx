@@ -42,7 +42,7 @@ const page = () => {
             <h2 className="text-[#252B42] text-4xl font-bold mb-4">
               Custodia de mercadería en tránsito
             </h2>
-            <p className="text-lg text-[#4B5563]">
+            <p className="text-lg text-[#4B5563] text-justify">
               Brindamos un servicio integral de custodia y protección de
               mercadería en tránsito, diseñado para minimizar riesgos y
               asegurar que cada carga llegue a destino de forma segura.

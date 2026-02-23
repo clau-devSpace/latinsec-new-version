@@ -42,7 +42,7 @@ const page = () => {
                   <h2 className="text-[#252B42] text-4xl font-bold mb-4">
                     Tótem de Seguridad
                   </h2>
-                  <p className="text-lg text-[#4B5563]">
+                  <p className="text-lg text-[#4B5563] text-justify">
                     Ofrecemos tótems de seguridad inteligentes, una solución
                     moderna que brinda presencia disuasiva, comunicación
                     inmediata y control visual en puntos estratégicos. Estos
