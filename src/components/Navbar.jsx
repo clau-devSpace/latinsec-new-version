@@ -230,7 +230,7 @@ export const Navbar = () => {
                     Patrullaje con Robots Autónomos y Drones
                   </a>
                    <a
-                    href="/seguridad-armada"
+                    href="/seguridad-bancaria"
                     className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
                   >
                     Seguridad Bancaria
