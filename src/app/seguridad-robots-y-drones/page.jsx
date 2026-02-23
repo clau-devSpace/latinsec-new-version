@@ -24,8 +24,7 @@ const page = () => {
               Robots Autónomos y Drones
             </h1>
             <p className="text-white italic py-3 drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              consequuntur expedita et voluptatem similique iste quibusdam.
+              Seguridad avanzada con patrullaje autónomo y monitoreo aéreo.
             </p>
           </div>
         </div>

@@ -13,9 +13,6 @@ import { TestimonialCard } from './TestimonialCard';
 
 
 import Swiper2 from '@/assets/images/swiper-about-2.webp';
-import Swiper3 from '@/assets/images/swiper-about-3.webp';
-import Swiper4 from '@/assets/images/swiper-about-4.webp';
-import Swiper5 from '@/assets/images/swiper-about-5.webp';
 import Image from 'next/image';
 
 export default function SwiperAbout() {

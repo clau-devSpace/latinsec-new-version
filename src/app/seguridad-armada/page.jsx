@@ -26,9 +26,7 @@ const page = () => {
               Seguridad Armada
             </h1>
             <p className="text-white italic py-3 drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-              deleniti aut impedit, tenetur sequi enim cumque commodi eum
-              obcaecati voluptatum?
+              Servicios de seguridad armada con criterio profesional y habilitación legal.
             </p>
           </div>
         </div>

@@ -34,8 +34,8 @@ import RobotsAutonomos from '@/assets/images/robots-autonomos.png';
 import SeguridadBancaria from '@/assets/images/seguridad-bancaria-1.png';
 import Research from '@/assets/images/research.jpg';
 import Totem from '@/assets/images/totem-vigilador.png';
-import NuevaPortada from '@/assets/images/nuevo-diseño-portada-2.png';
-import GuardiaSeguridad from '@/assets/images/seguridad-fisica-guardia-1.png';
+import NuevaPortada from '@/assets/images/imagen-portada.png';
+import GuardiaSeguridad from '@/assets/images/imagen-seguridad-fisica.png';
 
 const Home = () => {
   return (
@@ -76,7 +76,7 @@ const Home = () => {
       {/* Contenido del hero */}
       <div className="relative z-[3] h-screen flex items-center text-white px-4 pl-8 md:pl-16 lg:pl-24 xl:pl-32">
         <div className="flex flex-col gap-3 max-w-[1000px]">
-          <h1 className="xl:text-[42px] lg:text-6xl text-4xl font-bold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)]">
+          <h1 className="xl:text-[46px] lg:text-6xl text-4xl font-bold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)]">
             Tu {/*{" "}
             <Typewriter
               words={["protección"]}
@@ -92,7 +92,7 @@ const Home = () => {
           <p className="font-regular xl:text-xl lg:text-lg text-md max-w-md text-[#ffffff]">
             +29 años de trayectoria avalan nuestra experiencia.
           </p>
-          <a href='#nuestros-servicios'><button className="font-regular xl:text-xl lg:text-lg text-md w-fit text-[#dbe4ff] bg-[#e63946] rounded-lg px-3 py-1">Conocer servicios</button></a>
+          <a href='#nuestros-servicios'><button className="font-regular xl:text-xl lg:text-lg text-md w-fit text-[#dbe4ff] bg-[#e63946] rounded-lg px-3 py-1">CONOCER SERVICIOS</button></a>
         </div>
       </div>
     </section>

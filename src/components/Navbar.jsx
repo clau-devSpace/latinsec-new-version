@@ -217,6 +217,30 @@ export const Navbar = () => {
                   >
                     Asesoramiento y consultoría
                   </a>
+                   <a
+                    href="/servicio-de-totem"
+                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
+                  >
+                    Servicio de Tótems
+                  </a>
+                   <a
+                    href="/seguridad-robots-y-drones"
+                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
+                  >
+                    Patrullaje con Robots Autónomos y Drones
+                  </a>
+                   <a
+                    href="/seguridad-armada"
+                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
+                  >
+                    Seguridad Bancaria
+                  </a>
+                  <a
+                    href="/seguridad-armada"
+                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
+                  >
+                    Seguridad Armada
+                  </a>
                 </div>
               </details>
               <a href="/latinsec" className="py-3 px-4 text-[#0e2c66]">

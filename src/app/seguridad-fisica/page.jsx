@@ -5,7 +5,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import SeguridadFisicaCorporativa from "@/assets/images/seguridad-fisica-guardia-3.png";
 import SeguridadBarriosCerrados from '@/assets/images/seguridad-fisica-barrios.png';
 import CustodiaPersonal from '@/assets/images/custodia-personal.jpg';
-import SeguridadIndustrial from '@/assets/images/seguridad-industrias.jpeg';
+import SeguridadIndustrial from '@/assets/images/imagen-monitoreo.png';
 
 import {
     ShieldCheck,

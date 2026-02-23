@@ -25,7 +25,7 @@ const page = () => {
               Seguridad Bancaria
             </h1>
             <p className="text-white italic py-3 drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsa mollitia quasi. Reiciendis, provident aliquam.
+              Seguridad profesional diseñada para el entorno bancario y financiero.
             </p>
           </div>
         </div>
