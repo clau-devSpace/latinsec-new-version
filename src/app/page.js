@@ -51,7 +51,7 @@ const Home = () => {
           className="w-full h-full object-cover object-right"
         />
         {/* Overlay azul unificador */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07142a]/25 via-[#07142a]/10 to-[#07142a]/"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#07142a]/35 via-[#07142a]/20 to-[#07142a]/5"></div>
       </div>
 
       {/* Shapes geométricos 
@@ -92,7 +92,7 @@ const Home = () => {
           <p className="font-regular xl:text-xl lg:text-lg text-md max-w-md text-[#ffffff]">
             +29 años de trayectoria avalan nuestra experiencia.
           </p>
-          <a href='#nuestros-servicios'><button className="font-regular xl:text-xl lg:text-lg text-md w-fit text-[#dbe4ff] bg-[#e63946] rounded-lg px-3 py-1">CONOCER SERVICIOS</button></a>
+          <a href='#nuestros-servicios'><button className="font-regular xl:text-xl lg:text-lg text-md w-fit text-[#dbe4ff] bg-[#e63946] rounded-lg px-3 py-1">Conocer Servicios</button></a>
         </div>
       </div>
     </section>

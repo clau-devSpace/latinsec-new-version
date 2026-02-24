@@ -5,6 +5,7 @@ import CamarasImg from "@/assets/images/camaras-de-seguridad.jpg";
 import AlarmasImg from "@/assets/images/sistemas-de-alarmas-inteligentes.jpg";
 import TotemImg from "@/assets/images/totem-vigilador-virtual.jpg";
 import AccesosImg from "@/assets/images/control-de-accesos-biometricos-y-digital.jpg";
+import CercoElectrico from "@/assets/images/cerco-electrico-2.png";
 
 import Image from "next/image";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -99,7 +100,7 @@ const RedCheck = () => (
 
 const SectionTitle = ({ Icon, title }) => (
     <div className="flex items-start gap-3">
-        <span className="mt-[2px] inline-flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 ring-1 ring-white/15">
+        <span className="mt-[2px] inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#07142A]/60 ring-1 ring-white/15">
             <Icon className="h-5 w-5 text-white" strokeWidth={2.2} />
         </span>
         <h3 className="text-[#07142A] text-xl md:text-2xl font-extrabold">
@@ -176,6 +177,7 @@ export default function Page() {
         Camera,
         HardDrive,
         CreditCard,
+        CircuitBoard 
     } = Icons;
 
     const features = [
@@ -211,12 +213,11 @@ export default function Page() {
     ];
 
     const totemBullets = [
-        { icon: Eye, text: "Vigilador en vivo" },
-        { icon: MonitorSmartphone, text: "Pantalla HD integrada" },
-        { icon: Wifi, text: "Audio bidireccional" },
-        { icon: Clock, text: "Activación automática" },
-        { icon: Lock, text: "Control de acceso" },
-        { icon: Siren, text: "Respuesta inmediata" },
+        { icon: Eye, text: "Disuasión inmediata ante intentos de intrusión" },
+        { icon: MonitorSmartphone, text: "Sistema de alerta ante cortes o interferencias" },
+        { icon: Wifi, text: "Integración con alarmas y monitoreo" },
+        { icon: Clock, text: "Protección continua las 24 horas" },
+        { icon: Lock, text: "Adaptable a distintos tipos de perímetros" }
     ];
 
     const accesosBullets = [
@@ -325,7 +326,7 @@ export default function Page() {
                             <h2 className="text-[#07142A] text-3xl md:text-5xl font-extrabold">
                                 Nuestras Especialidades
                             </h2>
-                            <p className="text-[#07142A] mt-3 text-sm md:text-base">
+                            <p className="text-[#07142A] mt-3 text-sm md:text-base pb-8">
                                 Servicios de Seguridad Electrónica adaptados a
                                 diferentes sectores y necesidades.
                             </p>
@@ -388,13 +389,11 @@ export default function Page() {
                             <Reveal hiddenValue={{ opacity: 0, x: -60 }}>
                                 <div>
                                     <SectionTitle
-                                        Icon={MonitorSmartphone}
-                                        title="Totem Vigilador Virtual"
+                                        Icon={CircuitBoard}
+                                        title="Cerco Eléctrico"
                                     />
                                     <p className="text-[#07142A] mt-3 text-sm md:text-base">
-                                        Combina tecnologías avanzadas y un
-                                        diseño robusto para brindar máxima
-                                        seguridad.
+                                        Combina protección perimetral activa y un diseño confiable para reforzar la seguridad del entorno.
                                     </p>
                                     <BulletList items={totemBullets} />
                                 </div>
@@ -402,8 +401,8 @@ export default function Page() {
 
                             <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
                                 <MediaPhoto
-                                    src={TotemImg}
-                                    alt="Totem Vigilador Virtual"
+                                    src={CercoElectrico}
+                                    alt="Cerco eléctrico"
                                 />
                             </Reveal>
                         </div>

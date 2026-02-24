@@ -57,7 +57,7 @@ const RedCheck = () => (
 /** ✅ Icono del título en BLANCO */
 const TitleWithIcon = ({ icon: Icon, title }) => (
     <div className="flex items-start gap-3">
-        <span className="mt-[2px] inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/20">
+        <span className="mt-[2px] inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#07142A]/60 ring-1 ring-white/20">
             <Icon className="text-white" size={22} strokeWidth={2.2} />
         </span>
         <h3 className="text-[#07142A] text-xl md:text-2xl font-extrabold leading-tight">
@@ -222,7 +222,7 @@ export default function Page() {
             <div>
                 <div className="max-w-5xl mx-auto px-5 py-16">
                     <Reveal hiddenValue={{ opacity: 0, y: 40 }}>
-                        <h2 className="text-[#07142A] text-3xl md:text-4xl font-bold text-center mb-12">
+                        <h2 className="text-[#07142A] text-3xl md:text-4xl font-bold text-center mb-12 pb-12">
                             Soluciones por Sector
                         </h2>
                     </Reveal>

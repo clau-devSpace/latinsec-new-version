@@ -40,13 +40,13 @@ export const Footer = () => {
             Seguinos en nuestras redes sociales
           </p>
           <div className="mt-1 flex text-2xl gap-3">
-             <a href="#" className='bg-[#07142A] rounded-full p-2'>
+             <a href="https://www.instagram.com/latinsec.seguridad/" target='_blank' className='bg-[#07142A] rounded-full p-2'>
             <FaInstagram className="w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>
-          <a href="#" className='bg-[#07142A] rounded-full p-2'>
+          <a href="https://www.facebook.com/SeguridadLatinSec/" target='_blank' className='bg-[#07142A] rounded-full p-2'>
             <FaFacebookF className="w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>
-          <a href="#" className='bg-[#07142A] rounded-full p-2'>
+          <a href="https://www.linkedin.com/in/alejandro-vilella-b6189b350/" target='_blank' className='bg-[#07142A] rounded-full p-2'>
             <FaLinkedinIn className=" w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>
           </div>
