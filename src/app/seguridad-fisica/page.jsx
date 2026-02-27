@@ -2,10 +2,10 @@ import Seguridad from "@/assets/images/newImage.jpeg";
 import { Reveal } from "@/components/animation/Reveal";
 import Image from "next/image";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import SeguridadFisicaCorporativa from "@/assets/images/seguridad-fisica-guardia-3.png";
-import SeguridadBarriosCerrados from '@/assets/images/seguridad-fisica-barrios.png';
+import SeguridadFisicaCorporativa from "@/assets/images/imagen-monitoreo.png";
+import SeguridadBarriosCerrados from '@/assets/images/seguridad-barrios.png';
 import CustodiaPersonal from '@/assets/images/custodia-personal.jpg';
-import SeguridadIndustrial from '@/assets/images/imagen-monitoreo.png';
+import SeguridadIndustrial from '@/assets/images/seguridad-industrias.png';
 
 import {
     ShieldCheck,
@@ -233,7 +233,7 @@ export default function Page() {
                             <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
                                 <div className="relative h-[240px] rounded-2xl overflow-hidden shadow-xl">
                                     <Image
-                                        src={SeguridadFisicaCorporativa}
+                                        src={SeguridadIndustrial}
                                         alt="Seguridad Corporativa"
                                         fill
                                         className="object-cover"
@@ -376,7 +376,7 @@ export default function Page() {
                              <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
                                 <div className="relative h-[240px] rounded-2xl overflow-hidden shadow-xl">
                                     <Image
-                                        src={SeguridadIndustrial}
+                                        src={SeguridadFisicaCorporativa}
                                         alt="Soluciones para Empresas e Industrias"
                                         fill
                                         className="object-cover"
