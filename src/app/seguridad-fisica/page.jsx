@@ -1,3 +1,5 @@
+"use client";
+
 import Seguridad from "@/assets/images/newImage.jpeg";
 import { Reveal } from "@/components/animation/Reveal";
 import Image from "next/image";
@@ -25,6 +27,15 @@ import {
     Package,
     BriefcaseBusiness,
 } from "lucide-react";
+
+const MediaPlaceholder = ({ label }) => (
+    <div className="relative w-full h-[240px] rounded-2xl overflow-hidden border border-white/15 bg-white/10 flex items-center justify-center">
+        <div className="text-center px-6">
+            <p className="text-white font-semibold">{label}</p>
+            <p className="text-white/70 text-sm mt-1">(Imagen pendiente)</p>
+        </div>
+    </div>
+);
 
 const FeaturePill = ({ icon: Icon, label, tint = "blue" }) => {
     const tintMap = {
@@ -54,7 +65,6 @@ const RedCheck = () => (
     <span className="text-red-400 font-extrabold leading-none mt-[2px]">✓</span>
 );
 
-/** ✅ Icono del título en BLANCO */
 const TitleWithIcon = ({ icon: Icon, title }) => (
     <div className="flex items-start gap-3">
         <span className="mt-[2px] inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#07142A]/60 ring-1 ring-white/20">
@@ -82,20 +92,85 @@ const AEText = ({
     baseDelay = 0,
     step = 28,
     seed = 1337,
+    by = "char", // "char" | "word"
 }) => {
+    const rngFor = (index) => mulberry32(seed + index * 97);
+
+    if (by === "word") {
+        const tokens = text.split(/(\s+)/).filter(Boolean);
+        let globalIndex = 0;
+
+        return (
+            <Tag className={className} aria-label={text}>
+                {tokens.map((tok, tokenIdx) => {
+                    const isSpace = /^\s+$/.test(tok);
+
+                    if (isSpace) {
+                        globalIndex += tok.length;
+                        return (
+                            <span
+                                key={`sp-${tokenIdx}`}
+                                className="inline-block w-[0.35em]"
+                                aria-hidden="true"
+                            >
+                                {"\u00A0"}
+                            </span>
+                        );
+                    }
+
+                    const letters = Array.from(tok);
+
+                    return (
+                        <span
+                            key={`w-${tokenIdx}`}
+                            className="inline-block whitespace-nowrap"
+                        >
+                            {letters.map((ch) => {
+                                const idx = globalIndex++;
+                                const rng = rngFor(idx);
+
+                                const dx = Math.round((rng() * 2 - 1) * 26);
+                                const rot = Math.round((rng() * 2 - 1) * 16);
+                                const drop = Math.round(110 + rng() * 120);
+                                const dur = Math.round(820 + rng() * 260);
+                                const delay = baseDelay + idx * step;
+
+                                return (
+                                    <span
+                                        key={`${ch}-${idx}`}
+                                        className="ae-char inline-block"
+                                        style={{
+                                            "--dx": `${dx}px`,
+                                            "--rot": `${rot}deg`,
+                                            "--drop": `${drop}px`,
+                                            "--dur": `${dur}ms`,
+                                            "--delay": `${delay}ms`,
+                                        }}
+                                    >
+                                        {ch}
+                                    </span>
+                                );
+                            })}
+                        </span>
+                    );
+                })}
+            </Tag>
+        );
+    }
+
+    // by="char"
     const chars = Array.from(text);
 
     return (
         <Tag className={className} aria-label={text}>
             {chars.map((ch, i) => {
                 const isSpace = ch === " ";
-                const rng = mulberry32(seed + i * 97);
+                const rng = rngFor(i);
 
                 const dx = Math.round((rng() * 2 - 1) * 26);
                 const rot = Math.round((rng() * 2 - 1) * 16);
                 const drop = Math.round(110 + rng() * 120);
                 const dur = Math.round(820 + rng() * 260);
-
                 const delay = baseDelay + i * step;
 
                 return (
@@ -137,55 +212,38 @@ export default function Page() {
         <section className="bg-[#FAFAFA]">
             <WhatsAppButton />
 
-            <style
-                dangerouslySetInnerHTML={{
-                    __html: `
-            @keyframes aeFall {
-              0% {
-                opacity: 0;
-                transform: translate3d(var(--dx), calc(-1 * var(--drop)), 0) rotate(var(--rot)) scale(1.12);
-                filter: blur(10px);
-              }
-              55% {
-                opacity: 1;
-                transform: translate3d(0px, 14px, 0) rotate(calc(var(--rot) * -0.35)) scale(1);
-                filter: blur(0);
-              }
-              78% { transform: translate3d(0px, -7px, 0) rotate(calc(var(--rot) * 0.12)); }
-              92% { transform: translate3d(0px, 3px, 0) rotate(calc(var(--rot) * -0.06)); }
-              100% {
-                opacity: 1;
-                transform: translate3d(0px, 0px, 0) rotate(0deg) scale(1);
-                filter: blur(0);
-              }
-            }
-            .ae-char {
-              animation: aeFall var(--dur) cubic-bezier(.22,.61,.36,1) forwards;
-              animation-delay: var(--delay);
-              opacity: 0;
-              will-change: transform, opacity, filter;
-            }
-          `,
-                }}
-            />
-
-            {/* ========== HERO SECTION (Nuevo estilo igual a Custodia de Mercadería) ========== */}
-            <section className="bg-[#FAFAFA] relative h-screen">
+            <div className="relative w-full h-[320px] md:h-[460px] overflow-hidden">
                 <Image
                     src={SeguridadBarriosCerrados}
                     alt="Seguridad Física"
                     fill
                     className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/30" />
-                <div className="absolute inset-0 flex items-center">
-                    <div className="max-w-5xl mx-auto w-full px-5">
-                        <h1 className="text-white text-3xl md:text-6xl leading-tight drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)] font-bold">
-                            Seguridad Física
-                        </h1>
-                        <p className="text-white italic py-3 drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
-                            Protección profesional para empresas, barrios cerrados e industrias, con personal capacitado y tecnología de respaldo.
-                        </p>
+                <div className="absolute inset-0 bg-black/45" />
+
+                <div className="absolute inset-0 flex items-center justify-center px-5 text-center">
+                    <div className="max-w-4xl">
+                        <Reveal hiddenValue={{ opacity: 0, y: 20 }}>
+                            <AEText
+                                text="Seguridad Física"
+                                as="h1"
+                                seed={2026}
+                                baseDelay={120}
+                                step={28}
+                                by="char"
+                                className="text-white font-extrabold text-3xl md:text-6xl leading-tight drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+                            />
+
+                            <AEText
+                                text="Protección confiable con personal capacitado y procedimientos claros. Cobertura y vigilancia profesional con enfoque preventivo."
+                                as="p"
+                                seed={909}
+                                baseDelay={820}
+                                step={7}
+                                by="word"
+                                className="mt-3 mx-auto max-w-3xl text-white/90 text-sm md:text-base leading-relaxed"
+                            />
+                        </Reveal>
                     </div>
                 </div>
             </section>
@@ -227,7 +285,7 @@ export default function Page() {
                         </h2>
                     </Reveal>
 
-                    <div className="space-y-20">
+                    <div className="space-y-14">
                         {/* 1 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                             <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
@@ -247,11 +305,10 @@ export default function Page() {
                                         icon={Building2}
                                         title="Seguridad Corporativa y Comercial"
                                     />
-
-                                    <p className="text-[#07142A] font-semibold mt-3">
-                                        Resguardo de edificios, oficinas y
-                                        centros comerciales con controles de
-                                        acceso y presencia visible.
+                                    <p className="text-white/85 mt-3">
+                                        Cobertura para empresas y locaciones
+                                        corporativas con control operativo,
+                                        supervisión y prevención.
                                     </p>
 
                                     <ul className="mt-6 space-y-3 text-[#4B5563] text-sm md:text-base">
@@ -389,8 +446,7 @@ export default function Page() {
                                         icon={Factory}
                                         title="Soluciones para Empresas e Industrias"
                                     />
-
-                                    <p className="text-[#07142A] mt-3 font-semibold">
+                                    <p className="text-white/85 mt-3">
                                         Planes de seguridad adaptados a
                                         operaciones industriales, logística,
                                         comercios y edificios.
@@ -444,6 +500,7 @@ export default function Page() {
                            
                         </div>
 
+                        {/* 4 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                           
 
