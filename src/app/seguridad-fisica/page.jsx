@@ -4,6 +4,10 @@ import Seguridad from "@/assets/images/newImage.jpeg";
 import { Reveal } from "@/components/animation/Reveal";
 import Image from "next/image";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import SeguridadFisicaCorporativa from "@/assets/images/seguridad-fisica-guardia-3.png";
+import SeguridadBarriosCerrados from '@/assets/images/seguridad-fisica-barrios.png';
+import CustodiaPersonal from '@/assets/images/custodia-personal.jpg';
+import SeguridadIndustrial from '@/assets/images/imagen-monitoreo.png';
 
 import {
     ShieldCheck,
@@ -63,10 +67,10 @@ const RedCheck = () => (
 
 const TitleWithIcon = ({ icon: Icon, title }) => (
     <div className="flex items-start gap-3">
-        <span className="mt-[2px] inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/20">
+        <span className="mt-[2px] inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#07142A]/60 ring-1 ring-white/20">
             <Icon className="text-white" size={22} strokeWidth={2.2} />
         </span>
-        <h3 className="text-white text-xl md:text-2xl font-extrabold leading-tight">
+        <h3 className="text-[#07142A] text-xl md:text-2xl font-extrabold leading-tight">
             {title}
         </h3>
     </div>
@@ -210,11 +214,10 @@ export default function Page() {
 
             <div className="relative w-full h-[320px] md:h-[460px] overflow-hidden">
                 <Image
-                    src={Seguridad}
+                    src={SeguridadBarriosCerrados}
                     alt="Seguridad Física"
                     fill
-                    priority
-                    className="object-cover object-center"
+                    className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/45" />
 
@@ -243,67 +246,64 @@ export default function Page() {
                         </Reveal>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="max-w-5xl mx-auto px-5 py-16">
-                <Reveal hiddenValue={{ opacity: 0, x: 75 }}>
-                    <div className="bg-white rounded-2xl shadow-sm border border-black/5 p-8 md:p-10">
-                        <h2 className="text-[#252B42] text-2xl md:text-3xl font-bold">
-                            Protección Integral
-                        </h2>
+            {/* ========== SECCIÓN: Protección Integral ========== */}
+            <div className="max-w-5xl mx-auto px-5 py-20">
+                <Reveal hiddenValue={{ opacity: 0, y: 40 }}>
+                    <h2 className="text-[#07142A] text-3xl md:text-4xl font-bold text-center">
+                        Protección Integral para tu Operación
+                    </h2>
+                    <p className="text-[#5b5b5b] text-center mt-3 max-w-2xl mx-auto">
+                        Desarrollamos planes de seguridad física adaptados a
+                        cada necesidad. Combinamos personal entrenado,
+                        tecnología y respuesta inmediata para mantener tu
+                        espacio protegido.
+                    </p>
+                </Reveal>
 
-                        <p className="text-[#5b5b5b] mt-4 leading-relaxed">
-                            Nuestro servicio de seguridad física está orientado
-                            a proteger personas, instalaciones y activos, con
-                            vigilancia preventiva y protocolos operativos
-                            definidos. Trabajamos con equipos entrenados para
-                            responder con criterio y mantener el orden en cada
-                            entorno.
-                        </p>
-
-                        <p className="text-[#5b5b5b] mt-4 leading-relaxed">
-                            Complementamos la presencia operativa con
-                            herramientas y procesos de control que fortalecen la
-                            prevención, la supervisión y la capacidad de
-                            respuesta ante incidentes.
-                        </p>
-
-                        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            {proteccionIntegralPills.map((x) => (
-                                <FeaturePill
-                                    key={x.label}
-                                    icon={x.icon}
-                                    label={x.label}
-                                    tint={x.tint}
-                                />
-                            ))}
-                        </div>
+                <Reveal hiddenValue={{ opacity: 0, y: 30 }}>
+                    <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
+                        {proteccionIntegralPills.map((p) => (
+                            <FeaturePill
+                                key={p.label}
+                                icon={p.icon}
+                                label={p.label}
+                                tint={p.tint}
+                            />
+                        ))}
                     </div>
                 </Reveal>
             </div>
 
-            <div className="bg-gradient-to-b from-[#0B3B8C] via-[#082f73] to-[#06285f]">
-                <div className="max-w-6xl mx-auto px-5 py-16">
-                    <Reveal hiddenValue={{ opacity: 0, y: 20 }}>
-                        <div className="text-center mb-12">
-                            <h2 className="text-white text-3xl md:text-5xl font-extrabold">
-                                Nuestras Especialidades
-                            </h2>
-                            <p className="text-white/80 mt-3 text-sm md:text-base">
-                                Servicios de seguridad física adaptados a
-                                distintos entornos y niveles de riesgo.
-                            </p>
-                        </div>
+            {/* ========== SECCIÓN: Soluciones por Sector ========== */}
+            <div>
+                <div className="max-w-5xl mx-auto px-5 py-16">
+                    <Reveal hiddenValue={{ opacity: 0, y: 40 }}>
+                        <h2 className="text-[#07142A] text-3xl md:text-4xl font-bold text-center mb-12 pb-12">
+                            Soluciones por Sector
+                        </h2>
                     </Reveal>
 
                     <div className="space-y-14">
                         {/* 1 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                            <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
+                                <div className="relative h-[240px] rounded-2xl overflow-hidden shadow-xl">
+                                    <Image
+                                        src={SeguridadFisicaCorporativa}
+                                        alt="Seguridad Corporativa"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </Reveal>
+
                             <Reveal hiddenValue={{ opacity: 0, x: -60 }}>
                                 <div>
                                     <TitleWithIcon
                                         icon={Building2}
-                                        title="Seguridad Corporativa de Alto Nivel"
+                                        title="Seguridad Corporativa y Comercial"
                                     />
                                     <p className="text-white/85 mt-3">
                                         Cobertura para empresas y locaciones
@@ -311,23 +311,23 @@ export default function Page() {
                                         supervisión y prevención.
                                     </p>
 
-                                    <ul className="mt-6 space-y-3 text-white/90 text-sm md:text-base">
+                                    <ul className="mt-6 space-y-3 text-[#4B5563] text-sm md:text-base">
                                         {[
                                             {
                                                 icon: Users,
-                                                text: "Personal calificado y entrenamiento continuo",
+                                                text: "Personal uniformado en puntos estratégicos",
                                             },
                                             {
                                                 icon: Cctv,
-                                                text: "Vigilancia de instalaciones corporativas",
+                                                text: "Monitoreo en tiempo real y rondas programadas",
                                             },
                                             {
-                                                icon: ShieldCheck,
-                                                text: "Protección ejecutiva y monitoreo",
+                                                icon: ClipboardCheck,
+                                                text: "Registro de movimientos y control de visitantes",
                                             },
                                             {
                                                 icon: CalendarClock,
-                                                text: "Seguridad especializada para eventos",
+                                                text: "Supervisión constante las 24 horas",
                                             },
                                         ].map((it) => (
                                             <li
@@ -346,52 +346,48 @@ export default function Page() {
                                             </li>
                                         ))}
                                     </ul>
-                                </div>
-                            </Reveal>
 
-                            <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
-                                <MediaPlaceholder label="Imagen: Seguridad Corporativa (pendiente)" />
+                                    <p className="text-[#4B5563] mt-5 text-sm leading-relaxed">
+                                        Diseñamos cada esquema de seguridad en
+                                        función del flujo de personas, horarios y
+                                        requerimientos operativos.
+                                    </p>
+                                </div>
                             </Reveal>
                         </div>
 
                         {/* 2 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                            <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
-                                <div className="md:order-1">
-                                    <MediaPlaceholder label="Imagen: Barrios Cerrados (pendiente)" />
-                                </div>
-                            </Reveal>
-
                             <Reveal hiddenValue={{ opacity: 0, x: -60 }}>
                                 <div className="md:order-2">
                                     <TitleWithIcon
                                         icon={Home}
-                                        title="Protección para Barrios Cerrados y Urbanizaciones Privadas"
+                                        title="Vigilancia en Barrios Cerrados"
                                     />
 
-                                    <p className="text-white/85 mt-3">
-                                        Seguridad residencial con control de
-                                        accesos, rondas preventivas y respuesta
-                                        coordinada.
+                                    <p className="text-[#07142A] font-semibold mt-3">
+                                        Seguridad preventiva en urbanizaciones,
+                                        con presencia activa y tecnología de
+                                        respaldo.
                                     </p>
 
-                                    <ul className="mt-6 space-y-3 text-white/90 text-sm md:text-base">
+                                    <ul className="mt-6 space-y-3 text-[#4B5563] text-sm md:text-base">
                                         {[
                                             {
                                                 icon: Fence,
-                                                text: "Vigilancia perimetral y puntos críticos",
+                                                text: "Control de accesos y perímetro",
                                             },
                                             {
                                                 icon: Car,
-                                                text: "Control de acceso vehicular y peatonal",
+                                                text: "Rondas móviles dentro de la urbanización",
                                             },
                                             {
                                                 icon: Radio,
-                                                text: "Patrullajes internos programados",
+                                                text: "Comunicación interna con alerta rápida",
                                             },
                                             {
-                                                icon: ShieldCheck,
-                                                text: "Soporte operativo ante emergencias",
+                                                icon: CalendarClock,
+                                                text: "Cobertura permanente para tu tranquilidad",
                                             },
                                         ].map((it) => (
                                             <li
@@ -411,7 +407,7 @@ export default function Page() {
                                         ))}
                                     </ul>
 
-                                    <p className="text-white/80 mt-5 text-sm leading-relaxed">
+                                    <p className="text-[#4B5563] font-semibold mt-5 text-sm leading-relaxed">
                                         Nuestro equipo trabaja con
                                         procedimientos claros y supervisión
                                         constante para mantener un entorno
@@ -419,10 +415,31 @@ export default function Page() {
                                     </p>
                                 </div>
                             </Reveal>
+
+                            <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
+                                <div className="md:order-1 relative h-[240px] rounded-2xl overflow-hidden shadow-xl">
+                                    <Image
+                                        src={SeguridadBarriosCerrados}
+                                        alt="Vigilancia en Barrios Cerrados"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </Reveal>
                         </div>
 
                         {/* 3 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                             <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
+                                <div className="relative h-[240px] rounded-2xl overflow-hidden shadow-xl">
+                                    <Image
+                                        src={SeguridadIndustrial}
+                                        alt="Soluciones para Empresas e Industrias"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </Reveal>
                             <Reveal hiddenValue={{ opacity: 0, x: -60 }}>
                                 <div>
                                     <TitleWithIcon
@@ -435,7 +452,7 @@ export default function Page() {
                                         comercios y edificios.
                                     </p>
 
-                                    <ul className="mt-6 space-y-3 text-white/90 text-sm md:text-base">
+                                    <ul className="mt-6 space-y-3 text-[#4B5563] text-sm md:text-base">
                                         {[
                                             {
                                                 icon: Factory,
@@ -471,7 +488,7 @@ export default function Page() {
                                         ))}
                                     </ul>
 
-                                    <p className="text-white/80 mt-5 text-sm leading-relaxed">
+                                    <p className="text-[#4B5563] font-semibold mt-5 text-sm leading-relaxed">
                                         Analizamos el entorno, definimos puntos
                                         de control y aplicamos un esquema de
                                         supervisión para sostener la continuidad
@@ -480,18 +497,12 @@ export default function Page() {
                                 </div>
                             </Reveal>
 
-                            <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
-                                <MediaPlaceholder label="Imagen: Industrias (pendiente)" />
-                            </Reveal>
+                           
                         </div>
 
                         {/* 4 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                            <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
-                                <div className="md:order-1">
-                                    <MediaPlaceholder label="Imagen: Protección Personal (pendiente)" />
-                                </div>
-                            </Reveal>
+                          
 
                             <Reveal hiddenValue={{ opacity: 0, x: -60 }}>
                                 <div className="md:order-2">
@@ -500,13 +511,13 @@ export default function Page() {
                                         title="Protección y Vigilancia Personal"
                                     />
 
-                                    <p className="text-white/85 mt-3">
+                                    <p className="text-[#07142A] mt-3 font-semibold">
                                         Custodia preventiva para ejecutivos,
                                         personalidades públicas y situaciones de
                                         exposición.
                                     </p>
 
-                                    <ul className="mt-6 space-y-3 text-white/90 text-sm md:text-base">
+                                    <ul className="mt-6 space-y-3 text-[#4B5563] text-sm md:text-base">
                                         {[
                                             {
                                                 icon: UserCheck,
@@ -538,31 +549,25 @@ export default function Page() {
                                         ))}
                                     </ul>
 
-                                    <p className="text-white/80 mt-5 text-sm leading-relaxed">
+                                    <p className="text-[#4B5563] font-semibold mt-5 text-sm leading-relaxed">
                                         Nuestro objetivo es brindar tranquilidad
                                         y confianza con protocolos claros y
                                         respuesta coordinada.
                                     </p>
                                 </div>
                             </Reveal>
+                              <Reveal hiddenValue={{ opacity: 0, x: 60 }}>
+                                <div className="md:order-1 relative h-[240px] rounded-2xl overflow-hidden shadow-xl">
+                                    <Image
+                                        src={CustodiaPersonal}
+                                        alt="Protección y Vigilancia Personal"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </Reveal>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div className="bg-white">
-                <div className="max-w-5xl mx-auto px-5 py-14 text-center">
-                    <h3 className="text-[#252B42] text-2xl md:text-3xl font-bold">
-                        ¿Necesitas servicios de seguridad profesional?
-                    </h3>
-                    <p className="text-[#5b5b5b] mt-3 max-w-2xl mx-auto">
-                        Podemos armar un plan según tu necesidad: empresa,
-                        industria, urbanización o custodia personal.
-                    </p>
-
-                    <button className="mt-6 bg-red-600 hover:bg-red-700 text-white font-semibold px-7 py-3 rounded-full transition">
-                        Contáctanos
-                    </button>
                 </div>
             </div>
         </section>

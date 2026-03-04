@@ -16,16 +16,16 @@ export const Navbar = () => {
 
   return (
     <header className="nav fixed top-0 w-full z-50 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
-      <nav className="bg-white max-w-[1400px] mx-auto px-10 py-1.5 grid grid-cols-[auto_1fr_auto] items-center gap-8">
+      <nav className="bg-white max-w-[1400px] mx-auto px-10 py-2.5 grid grid-cols-[auto_1fr_auto] items-center gap-8">
         {/* Logo */}
-        <div className="w-32">
+        <div className="w-36">
           <a href="/">
             <Image src={Logo} alt="Logo" />
           </a>
         </div>
 
         {/* Menú Desktop - Centrado */}
-        <ul className="lg:flex hidden items-center justify-center gap-8 text-[15px] font-medium text-[#0e2c66]">
+        <ul className="lg:flex hidden items-center justify-center gap-5 text-[15px] font-medium text-[#0e2c66]">
           <li>
             <a
               href="/"
@@ -53,18 +53,18 @@ export const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/custodia-de-mercaderia"
-                  className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
-                >
-                  Custodia de mercadería
-                </a>
-              </li>
-              <li>
-                <a
                   href="/seguridad-electronica"
                   className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
                 >
                   Seguridad electrónica
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/custodia-de-mercaderia"
+                  className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                  Custodia de mercadería en tránsito
                 </a>
               </li>
               <li>
@@ -83,6 +83,38 @@ export const Navbar = () => {
                   Asesoramiento y consultoría
                 </a>
               </li>
+               <li>
+                <a
+                  href="/servicio-de-totem"
+                  className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                  Servicio de Tótems
+                </a>
+              </li>
+               <li>
+                <a
+                  href="/seguridad-robots-y-drones"
+                  className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                 Patrullaje con robots autónomos y drones
+                </a>
+              </li>
+               <li>
+                <a
+                  href="/seguridad-bancaria"
+                  className="block p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                  Seguridad bancaria
+                </a>
+              </li>
+               <li>
+                <a
+                  href="/seguridad-armada"
+                  className="block p-1 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                  Seguridad armada
+                </a>
+              </li>
             </ul>
           </li>
 
@@ -98,7 +130,7 @@ export const Navbar = () => {
           <li>
             <a
               href="/contacto"
-              className="font-semibold bg-[#e63946] text-white rounded-full py-2 px-6 hover:bg-[#d62839] transition-colors shadow-[0_15px_35px_rgba(230,57,70,0.35)]"
+              className=" text-[#e63946] relative py-2 hover:after:w-full after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#e63946] after:transition-all after:duration-300"
             >
               Contacto
             </a>
@@ -106,15 +138,15 @@ export const Navbar = () => {
         </ul>
 
         {/* Puntos decorativos - Desktop */}
-        <div className="lg:flex hidden gap-3 text-[#0e2c66] opacity-60">
-          <a href="#">
-            <FaInstagram className="w-4 h-4 hover:text-[#e63946]" />
+        <div className="lg:flex hidden gap-3 text-[#0e2c66]">
+          <a href="https://www.instagram.com/latinsec.seguridad/" target='_blank' className='bg-[#07142A] rounded-full p-2'>
+            <FaInstagram className="w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>
-          <a href="#">
-            <FaFacebookF className="w-4 h-4 hover:text-[#e63946]" />
+          <a href="https://www.facebook.com/SeguridadLatinSec/" target='_blank' className='bg-[#07142A] rounded-full p-2'>
+            <FaFacebookF className="w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>
-          <a href="#">
-            <FaLinkedinIn className="w-4 h-4 hover:text-[#e63946]" />
+          <a href="https://www.linkedin.com/in/alejandro-vilella-b6189b350/" target='_blank' className='bg-[#07142A] rounded-full p-2'>
+            <FaLinkedinIn className=" w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>
         </div>
 
@@ -161,18 +193,19 @@ export const Navbar = () => {
                   >
                     Seguridad física
                   </a>
-                  <a
-                    href="/custodia-de-mercaderia"
-                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
-                  >
-                    Custodia de mercadería
-                  </a>
-                  <a
+                   <a
                     href="/seguridad-electronica"
                     className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
                   >
                     Seguridad electrónica
                   </a>
+                  <a
+                    href="/custodia-de-mercaderia"
+                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
+                  >
+                    Custodia de mercadería en tránsito
+                  </a>
+                 
                   <a
                     href="/investigaciones"
                     className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
@@ -184,6 +217,30 @@ export const Navbar = () => {
                     className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
                   >
                     Asesoramiento y consultoría
+                  </a>
+                   <a
+                    href="/servicio-de-totem"
+                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
+                  >
+                    Servicio de Tótems
+                  </a>
+                   <a
+                    href="/seguridad-robots-y-drones"
+                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
+                  >
+                    Patrullaje con Robots Autónomos y Drones
+                  </a>
+                   <a
+                    href="/seguridad-bancaria"
+                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
+                  >
+                    Seguridad Bancaria
+                  </a>
+                  <a
+                    href="/seguridad-armada"
+                    className="p-2 hover:text-[#0063A5] hover:bg-gray-50 rounded-lg"
+                  >
+                    Seguridad Armada
                   </a>
                 </div>
               </details>

@@ -31,38 +31,38 @@ import Elec from '@/assets/images/control-accesos.png';
 import Custodia from '@/assets/images/imagen-escolta.png';
 import Consultoria from '@/assets/images/consultoria.jpg';
 import RobotsAutonomos from '@/assets/images/robots-autonomos.png';
-import SeguridadBancaria from '@/assets/images/seguridad-en-bancos.jpeg';
+import SeguridadBancaria from '@/assets/images/seguridad-bancaria-1.png';
 import Research from '@/assets/images/research.jpg';
 import Totem from '@/assets/images/totem-vigilador.png';
-
-
+import NuevaPortada from '@/assets/images/imagen-portada.png';
+import GuardiaSeguridad from '@/assets/images/imagen-seguridad-fisica.png';
 
 const Home = () => {
   return (
     <main className="z-10 relative">
       {/*<ChatBot />*/}
       <WhatsAppButton />
-     <section className="relative min-h-screen overflow-hidden bg-gradient-to-l from-[#2a4a6c]/40 to-[#3d6db0]/30">
+     <section className="relative min-h-screen overflow-hidden bg-gradient-to-l from-[#2a4a6c]/45 to-[#3d6db0]/20">
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-[1]">
         <img 
-          src={ImagenPortada.src} 
+          src={NuevaPortada.src} 
           alt="Background"
           className="w-full h-full object-cover object-right"
         />
         {/* Overlay azul unificador */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07142a]/80 via-[#07142a]/64 to-[#07142a]/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#07142a]/35 via-[#07142a]/20 to-[#07142a]/5"></div>
       </div>
 
-      {/* Shapes geométricos */}
+      {/* Shapes geométricos 
       <div className="absolute w-[520px] h-[520px] bg-white/5 rounded-[60px] rotate-[20deg] top-[-160px] right-[120px] z-[2]"></div>
       <div className="absolute w-[420px] h-[420px] bg-white/5 rounded-[60px] -rotate-[25deg] bottom-[-200px] left-[-140px] z-[2]"></div>
       <div className="absolute w-[380px] h-[380px] bg-white/[0.04] rounded-[60px] rotate-[20deg] top-[120px] right-[380px] z-[2] blur-[2px]"></div>
       <div className="absolute w-[260px] h-[260px] bg-[#e63946]/[0.08] rounded-[60px] -rotate-[15deg] bottom-[160px] right-[120px] z-[2]"></div>
-      <div className="absolute w-[600px] h-[600px] bg-white/[0.03] rounded-[60px] rotate-[30deg] bottom-[-260px] right-[-200px] z-[2]"></div>
+      <div className="absolute w-[600px] h-[600px] bg-white/[0.03] rounded-[60px] rotate-[30deg] bottom-[-260px] right-[-200px] z-[2]"></div>*/}
 
-      {/* Panel diagonal */}
-      <div className="absolute inset-0 z-[2] pointer-events-none bg-gradient-to-br from-transparent via-white/5 to-transparent bg-[length:200%_200%] opacity-50"></div>
+      {/* Panel diagonal 
+      <div className="absolute inset-0 z-[2] pointer-events-none bg-gradient-to-br from-transparent via-white/5 to-transparent bg-[length:200%_200%] opacity-50"></div>*/}
 
       {/* Grid decorativa */}
       <div 
@@ -74,10 +74,10 @@ const Home = () => {
       ></div>
 
       {/* Contenido del hero */}
-      <div className="relative z-[3] h-screen grid place-content-center text-white px-4">
-        <div className="flex flex-col items-center text-center gap-3 max-w-[800px]">
-          <h1 className="xl:text-[52px] lg:text-5xl text-3xl font-extrabold">
-            Tu{" "}
+      <div className="relative z-[3] h-screen flex items-center text-white px-4 pl-8 md:pl-16 lg:pl-24 xl:pl-32">
+        <div className="flex flex-col gap-3 max-w-[1000px]">
+          <h1 className="xl:text-[46px] lg:text-6xl text-4xl font-bold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)]">
+            Tu {/*{" "}
             <Typewriter
               words={["protección"]}
               loop={5}
@@ -86,13 +86,13 @@ const Home = () => {
               typeSpeed={100}
               deleteSpeed={80}
               delaySpeed={2000}
-            />{" "}
-            es nuestra especialidad
+            />{" "}*/}
+             Protección es nuestra Especialidad
           </h1>
-          <p className="font-medium xl:text-xl lg:text-lg text-md max-w-sm text-[#dbe4ff]">
-            Somos una empresa de vigilancia que cuenta con mas de 27 años de
-            experiencia
+          <p className="font-regular xl:text-xl lg:text-lg text-md max-w-md text-[#ffffff]">
+            +29 años de trayectoria avalan nuestra experiencia.
           </p>
+          <a href='#nuestros-servicios'><button className="font-regular xl:text-xl lg:text-lg text-md w-fit text-[#dbe4ff] bg-[#e63946] rounded-lg px-3 py-1">Conocer Servicios</button></a>
         </div>
       </div>
     </section>
@@ -115,10 +115,10 @@ const Home = () => {
             </span>
             <div>
               <span className="font-bold text-[24px] text-[#252B42]">
-                +<CountUp end={250} duration={5} />
+                +<CountUp end={450} duration={5} />
               </span>
               <p className="font-semibold text-sm text-[#737373]">
-                Clientes felices
+                Clientes satisfechos
               </p>
             </div>
           </div>
@@ -128,7 +128,7 @@ const Home = () => {
             </span>
             <div>
               <span className="font-bold text-[24px] text-[#252B42]">
-                +<CountUp end={27} duration={5} />
+                +<CountUp end={29} duration={5} />
               </span>
               <p className="font-semibold text-sm text-[#737373]">
                 Años en el mercado
@@ -141,7 +141,7 @@ const Home = () => {
 <section className="bg-white py-16">
   <div className="max-w-7xl mx-auto px-5">
     <div className="text-center max-w-xl mx-auto mb-14">
-      <h2 className="text-[38px] font-bold text-[#07142A]">
+      <h2 className="text-[38px] font-bold text-[#07142A]" id='nuestros-servicios'>
         Nuestros Servicios
       </h2>
       <p className="text-[#737373] mt-3">
@@ -161,12 +161,12 @@ const Home = () => {
     >
       {/* Seguridad Fisica */}
       <div className="group relative h-[340px] rounded-2xl overflow-hidden shadow-md">
-        <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/80 px-5 py-2">
+        <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/70 px-5 py-2">
           <h3 className="text-white text-base font-medium">Seguridad Física</h3>
         </div>
         <img
-          src={Fisic.src}
-          alt="Investigación"
+          src={GuardiaSeguridad.src}
+          alt="Seguridad Fisica"
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/15 to-transparent"></div>
@@ -175,7 +175,7 @@ const Home = () => {
              Personal de seguridad altamente capacitado
           </p>
           <a
-            href="/investigaciones"
+            href="/seguridad-fisica"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -196,10 +196,10 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/15 to-transparent"></div>
         <div className="absolute bottom-0 p-6 text-white">
           <p className="text-sm text-white/90">
-            Monitoreo y tecnología de última generación
+            Tecnología de última generación con IA aplicada
           </p>
           <a
-            href="/seguridad-fisica"
+            href="/seguridad-electronica"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -233,66 +233,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Seguridad Electrónica */}
-      <div className="group relative h-[340px] rounded-2xl overflow-hidden shadow-md">
-        <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/70 px-5 py-2">
-          <h3 className="text-white text-base font-medium">
-            Seguridad Bancaria
-          </h3>
-        </div>
-        <img
-          src={SeguridadBancaria.src}
-          alt="Seguridad Electrónica"
-          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-        <div className="absolute bottom-0 p-6 text-white">
-          <p className="text-sm text-white/90">
-            Protección integral para entidades financieras
-          </p>
-          <a
-            href="/seguridad-electronica"
-            className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
-          >
-            Más info <ArrowRightIcon className="w-4 h-4" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    {/* Grid premium – cards inferiores */}
-    <div
-      className="
-        grid
-        gap-8
-        justify-center
-        [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]
-      "
-    >
-      {/* Seguridad Bancaria */}
-      <div className="group relative h-[340px] rounded-2xl overflow-hidden shadow-md">
-        <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/70 px-5 py-2">
-          <h3 className="text-white text-base font-medium">Asesoramiento y Consultoría</h3>
-        </div>
-        <img
-          src={Consultoria.src}
-          alt="Seguridad Bancaria"
-          className="absolute inset-0 w-full h-full object-cover object-[center_3%] group-hover:scale-105 transition-transform duration-700"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-        <div className="absolute bottom-0 p-6 text-white">
-          <p className="text-sm text-white/90">
-            Asesorías integrales en Seguridad
-          </p>
-          <a
-            href="/seguridad-bancaria"
-            className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
-          >
-            Más info <ArrowRightIcon className="w-4 h-4" />
-          </a>
-        </div>
-      </div>
-
       {/* Servicio de Tótem */}
       <div className="group relative h-[340px] rounded-2xl overflow-hidden shadow-md">
         <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/70 px-5 py-2">
@@ -309,7 +249,44 @@ const Home = () => {
             Investigaciones con enfoques únicos en cada caso
           </p>
           <a
-            href="/servicio-de-toten"
+            href="/investigaciones"
+            className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
+          >
+            Más info <ArrowRightIcon className="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+
+      
+     </div>
+      
+    {/* Grid premium – cards inferiores */}
+    <div
+      className="
+        grid
+        gap-8
+        justify-center
+        [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]
+      "
+    > 
+
+     {/* Seguridad Bancaria */}
+      <div className="group relative h-[340px] rounded-2xl overflow-hidden shadow-md">
+        <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/70 px-5 py-2">
+          <h3 className="text-white text-base font-medium">Asesoramiento y Consultoría</h3>
+        </div>
+        <img
+          src={Consultoria.src}
+          alt="Seguridad Bancaria"
+          className="absolute inset-0 w-full h-full object-cover object-[center_3%] group-hover:scale-105 transition-transform duration-700"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+        <div className="absolute bottom-0 p-6 text-white">
+          <p className="text-sm text-white/90">
+            Asesorías integrales en Seguridad
+          </p>
+          <a
+            href="/asesoramiento-y-consultoria"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -333,7 +310,7 @@ const Home = () => {
             Tótems de Seguridad con tecnología de vanguardia
           </p>
           <a
-            href="#"
+            href="/servicio-de-totem"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -344,7 +321,7 @@ const Home = () => {
       {/* Seguridad Integral */}
       <div className="group relative h-[340px] rounded-2xl overflow-hidden shadow-md">
         <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/70 px-5 py-2">
-          <h3 className="text-white text-base font-medium">Robots Autónomos</h3>
+          <h3 className="text-white text-base font-medium">Robots Autónomos y Drones</h3>
         </div>
         <img
           src={RobotsAutonomos.src}
@@ -357,7 +334,33 @@ const Home = () => {
             Sistema de control de rondas y vigilancia
           </p>
           <a
-            href="#"
+            href="/seguridad-robots-y-drones"
+            className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
+          >
+            Más info <ArrowRightIcon className="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+
+      {/* Seguridad Electrónica */}
+      <div className="group relative h-[340px] rounded-2xl overflow-hidden shadow-md">
+        <div className="absolute top-0 left-0 right-0 z-10 bg-[#0263A5]/70 px-5 py-2">
+          <h3 className="text-white text-base font-medium">
+            Seguridad Bancaria
+          </h3>
+        </div>
+        <img
+          src={SeguridadBancaria.src}
+          alt="Seguridad bancaria"
+          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+        <div className="absolute bottom-0 p-6 text-white">
+          <p className="text-sm text-white/90">
+            Protección integral para entidades financieras
+          </p>
+          <a
+            href="/seguridad-bancaria"
             className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-[#7EC1FF]"
           >
             Más info <ArrowRightIcon className="w-4 h-4" />
@@ -372,22 +375,34 @@ const Home = () => {
   <div className="max-w-5xl mx-auto">
     <Reveal>
       <div className="text-center max-w-4xl px-5 mx-auto">
-        <h3 className="text-[#07142A] font-bold text-[40px] mb-4">
-          Sobre <span className="text-[#0263A5]">Latin</span>
-          <span className="text-[#FF0000]">Sec</span>
+        <h3 className="text-[#0263A5] font-bold text-[40px] mb-4">
+          Sobre Nosotros
         </h3>
 
-        <p className="text-[#4B5563] font-medium text-base md:text-lg leading-relaxed">
-        Con 27 años de trayectoria, somos una empresa de seguridad dedicada a la protección de personas, bienes e información. A lo largo de nuestra historia hemos trabajado con clientes de primer nivel, construyendo relaciones basadas en la confianza, el compromiso y el profesionalismo.
+        <p className="text-[#07142A] font-regular text-base md:text-lg leading-relaxed">
+        Con <strong>29 años de trayectoria</strong>, somos una empresa de seguridad dedicada a la <strong>protección de personas, bienes e información</strong>. A lo largo de nuestra historia hemos trabajado con clientes de primer nivel, construyendo relaciones basadas en la <strong>confianza, el compromiso y el profesionalismo.</strong>
         </p>
 
-        <p className="text-[#4B5563] font-medium text-base md:text-lg leading-relaxed mt-4">
-          Ofrecemos soluciones integrales de seguridad, combinando personal capacitado, tecnología confiable y procedimientos eficientes, adaptados a las necesidades de cada cliente. Nuestro enfoque es cercano y personalizado, con altos estándares de calidad y una mejora constante para responder a los nuevos desafíos del entorno.
+        <p className="text-[#07142A] font-regular text-base md:text-lg leading-relaxed mt-4">
+          Ofrecemos soluciones integrales de seguridad, combinando <strong>personal capacitado, tecnología confiable y procedimientos eficientes</strong>, adaptados a las necesidades de cada cliente. Nuestro enfoque es cercano y personalizado, con altos estándares de calidad y una mejora constante para responder a los nuevos desafíos del entorno.
         </p>
       </div>
     </Reveal>
   </div>
 </section>
+
+       <section className="bg-[#FAFAFA] py-10 px-5">
+        <div className="text-center">
+          <h3 className="text-[#07142A] font-bold text-[32px]">
+            Compañías con la que trabaja{" "}
+            <span className="text-[#FF0000]">Latin</span>
+            <span className="text-[#0263A5]">Sec</span>
+          </h3>
+        </div>
+        <div className="mt-10">
+          <SwiperCompanies data={DataCompanies} />
+        </div>
+      </section>
 
       <section className="bg-[#0263A5] py-10 px-5">
         <div className="text-center max-w-xl mx-auto">
@@ -402,18 +417,7 @@ const Home = () => {
           <SwiperComponent />
         </div>
       </section>
-      <section className="bg-[#FAFAFA] py-10 px-5">
-        <div className="text-center">
-          <h3 className="text-[#252B42] font-bold text-[32px]">
-            Compañías con la que trabaja{" "}
-            <span className="text-[#0263A5]">Latin</span>
-            <span className="text-[#FF0000]">Sec</span>
-          </h3>
-        </div>
-        <div className="mt-10">
-          <SwiperCompanies data={DataCompanies} />
-        </div>
-      </section>
+     
       <section className="bg-[#FAFAFA] pt-16 pb-20 text-white px-5">
         <div className="max-w-5xl mx-auto lg:flex items-center gap-5">
           <Reveal hiddenValue={{ opacity: 0, x: -75 }}>

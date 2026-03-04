@@ -11,14 +11,14 @@ export const CallToAction = () => {
               ¿Necesitas servicios de seguridad profesional?
             </h2>
             <p className="text-[#737373] text-lg mb-8 max-w-2xl mx-auto">
-              Con más de 27 años de experiencia, ofrecemos soluciones de seguridad personalizadas para empresas y particulares. Contáctanos para una consulta gratuita.
+              Con más de 29 años de experiencia, ofrecemos soluciones de seguridad personalizadas para empresas y particulares. Contáctanos para una consulta gratuita.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://wa.me/+5491157651676"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#25D366] text-white px-8 py-4 rounded-full font-bold hover:bg-[#1ea952] transition-colors flex items-center justify-center gap-2"
+                className="bg-[#e63946] text-white px-8 py-4 rounded-full font-bold hover:bg-[#1ea952] transition-colors flex items-center justify-center gap-2"
               >
                 <WhatsappIcon className="w-6 h-6" />
                 Chatear por WhatsApp
