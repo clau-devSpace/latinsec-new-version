@@ -34,11 +34,13 @@ import RobotsAutonomos from '@/assets/images/robots-autonomos.png';
 import SeguridadBancaria from '@/assets/images/seguridad-bancaria-1.png';
 import Research from '@/assets/images/research.jpg';
 import Totem from '@/assets/images/totem-vigilador.png';
-import NuevaPortada from '@/assets/images/imagen-portada.png';
+import NuevaPortada from '@/assets/images/portada-sin-brazos-cruzados.png';
 import GuardiaSeguridad from '@/assets/images/imagen-seguridad-fisica.png';
+import SplashScreen from "@/components/SplashScreen";
 
 const Home = () => {
   return (
+    <> <SplashScreen duration={2500} />
     <main className="z-10 relative">
       {/*<ChatBot />*/}
       <WhatsAppButton />
@@ -435,7 +437,9 @@ const Home = () => {
         </div>
       </section>
     </main>
+  </>
   );
+    
 };
 
 export default Home;

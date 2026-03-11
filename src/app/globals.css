@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html { --global-ae-delay: 0ms; }
+html[data-splash="1"] { --global-ae-delay: 3000ms; }
+
 .nav {
   animation: nav-shadown 1s linear both;
   animation-timeline: scroll();
