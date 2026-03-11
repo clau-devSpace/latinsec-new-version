@@ -1,9 +1,9 @@
-import Custodia from "@/assets/images/custodia-de-mercaderia.jpg";
+
 import { Reveal } from "@/components/animation/Reveal";
 import {Dot, Check} from 'lucide-react';
 import Image from "next/image";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import Totem from "@/assets/images/totem-fondo.png";
+import Totem from "@/assets/images/Totem-fondo.png";
 import TotemDescripcion from "@/assets/images/totem-descripcion.png";
 
 const page = () => {
