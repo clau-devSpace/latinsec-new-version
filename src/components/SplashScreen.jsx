@@ -16,10 +16,6 @@ export default function SplashScreen({ duration = 3000 }) {
     root.style.setProperty("--global-ae-delay", `${duration}ms`);
     root.style.setProperty("--splash-ms", `${duration}ms`);
 
-    const scrollbarWidth = window.innerWidth - root.clientWidth;
-    if (scrollbarWidth > 0) {
-      body.style.paddingRight = `${scrollbarWidth}px`;
-    }
     body.style.overflow = "hidden";
 
     const t = setTimeout(() => {
@@ -27,7 +23,7 @@ export default function SplashScreen({ duration = 3000 }) {
       root.removeAttribute("data-splash");
       root.style.setProperty("--global-ae-delay", "0ms");
       body.style.overflow = prevOverflow;
-      body.style.paddingRight = prevPaddingRight;
+      
     }, duration);
 
     return () => {
@@ -35,7 +31,7 @@ export default function SplashScreen({ duration = 3000 }) {
       root.removeAttribute("data-splash");
       root.style.setProperty("--global-ae-delay", "0ms");
       body.style.overflow = prevOverflow;
-      body.style.paddingRight = prevPaddingRight;
+    
     };
   }, [duration]);
 
