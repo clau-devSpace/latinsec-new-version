@@ -1,71 +1,29 @@
 /* ============================================================
    SplashScreen.module.css
+   Solo animaciones — el centrado va inline en el JSX
    ============================================================ */
 
-/* ---------- Contenedor principal ---------- */
-.splash {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  pointer-events: none;
-
-  width: 100vw;
-  height: 100vh;
-  margin-left: calc(50% - 50vw);
-
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  box-sizing: border-box;
-
-  background:
-    radial-gradient(900px 400px at 50% 45%, rgba(229, 57, 53, 0.04), transparent),
-    radial-gradient(700px 300px at 50% 55%, rgba(15, 95, 166, 0.04), transparent),
-    #ffffff;
-
+.splashFade {
   animation: lsFadeOut var(--splash-ms, 3000ms) ease forwards;
-  isolation: isolate;
 }
 
-/* ---------- Logo centrado ---------- */
-.logoWrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 768px) {
+  .splashFade {
+    display: none !important;
+  }
+}
 
-  /* Zoom: arranca pequeño, crece al tamaño real */
+.logoInner {
   animation: lsZoomIn 1800ms cubic-bezier(0.16, 1, 0.3, 1) both;
-  transform-origin: center center;
-  will-change: transform, opacity;
+  transform-origin: 50% 50%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
-
-.logoImg {
-  display: block;
-  width: clamp(180px, 28vw, 380px);
-  height: auto;
-  object-fit: contain;
-}
-
-/* ============================================================
-   KEYFRAMES
-   ============================================================ */
 
 @keyframes lsZoomIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  65% {
-    opacity: 1;
-    transform: scale(1.08);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  0%   { opacity: 0; transform: scale(0.3);    }
+  65%  { opacity: 1; transform: scale(1.08);   }
+  100% { opacity: 1; transform: scale(1);      }
 }
 
 @keyframes lsFadeOut {
@@ -73,3 +31,6 @@
   84%  { opacity: 1; visibility: visible; }
   100% { opacity: 0; visibility: hidden;  }
 }
+
+
+

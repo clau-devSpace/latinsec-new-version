@@ -3,9 +3,9 @@ import { Reveal } from "@/components/animation/Reveal";
 import Image from "next/image";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import SeguridadFisicaCorporativa from "@/assets/images/imagen-monitoreo.png";
-import SeguridadBarriosCerrados from '@/assets/images/seguridad-barrios.png';
+import SeguridadBarriosCerrados from '@/assets/images/imagen-guardia-barrios.jpeg';
 import CustodiaPersonal from '@/assets/images/custodia-personal.jpg';
-import SeguridadIndustrial from '@/assets/images/seguridad-industrias.png';
+import SeguridadIndustrial from '@/assets/images/imagen-guardia-empresas.jpeg';
 
 import {
     ShieldCheck,
