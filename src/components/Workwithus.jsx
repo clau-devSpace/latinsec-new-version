@@ -20,7 +20,7 @@ export const WorkWithUsButton = () => {
   return (
     <a
       href="/contacto-recursos-humanos"
-      className="fixed bottom-14 right-4 md:bottom-24 md:right-8 z-50 md:w-56 flex items-center gap-2 md:gap-3 bg-[#0263A5] hover:bg-[#024f87] transition-colors duration-300 rounded-full pl-2 pr-4 py-2 md:pl-3 md:pr-5 md:py-3 shadow-lg"
+      className="fixed bottom-16 right-4 md:bottom-24 md:right-8 z-50 md:w-56 flex items-center gap-2 md:gap-3 bg-[#0263A5] hover:bg-[#024f87] transition-colors duration-300 rounded-full pl-2 pr-4 py-2 md:pl-3 md:pr-5 md:py-3 shadow-lg"
     >
       <div className="bg-white/20 rounded-full p-1.5 flex items-center justify-center">
         <BriefcaseIcon className="w-6 h-6 text-white" />

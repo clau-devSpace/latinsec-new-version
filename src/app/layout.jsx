@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         />
         {/* Google Tag Manager End */}
       </head>
-      <body>
+      <body className="overflow-x-hidden">
         {/* Google Tag Manager (noscript) */}
         <noscript 
           dangerouslySetInnerHTML={{
