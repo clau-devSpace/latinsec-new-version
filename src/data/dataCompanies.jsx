@@ -6,7 +6,6 @@ import logomech from '../assets/logos/logomech.png';
 import logosica from '../assets/logos/logosica.png';
 import olmologo from '../assets/logos/olmologo.png';
 import Fincas from '../assets/logos/fincas-san-vicente.jpg';
-import Haras from '../assets/logos/haras-del-sol.png';
 import SantaIsabel from '../assets/logos/barrio-santa-isabel.jpeg';
 import beraldi from '../assets/logos/beraldi.png';
 
@@ -18,7 +17,6 @@ export const DataCompanies = [
   { logo: logoassitcargo },
   { logo: logomech },
   { logo: logosica },
-  { logo: Haras},
   { logo: olmologo },
   { logo: SantaIsabel},
   { logo: beraldi}

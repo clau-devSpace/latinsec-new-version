@@ -35,7 +35,6 @@ export default function RootLayout({ children }) {
         {/* Google Tag Manager (noscript) End */}
         <Navbar />
         {children}
-        <CallToAction />
         <Footer />
       </body>
     </html>

@@ -129,6 +129,15 @@ export const Navbar = () => {
 
           <li>
             <a
+              href="/contacto-recursos-humanos"
+              className="relative py-2 hover:after:w-full after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#e63946] after:transition-all after:duration-300"
+            >
+              Trabajá con Nosotros
+            </a>
+          </li>
+
+            <li>
+            <a
               href="/contacto"
               className=" text-[#e63946] relative py-2 hover:after:w-full after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#e63946] after:transition-all after:duration-300"
             >
@@ -246,6 +255,9 @@ export const Navbar = () => {
               </details>
               <a href="/latinsec" className="py-3 px-4 text-[#0e2c66]">
                 Latinsec
+              </a>
+              <a href="/contacto-recursos-humanos" className="py-3 px-4 text-[#0e2c66]">
+                Trabajá con Nosotros
               </a>
               <a
                 href="/contacto"

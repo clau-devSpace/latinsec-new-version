@@ -24,6 +24,7 @@ import { DataTerritory } from '@/data/dataTerritory';
 import SwiperAbout from '@/components/SwiperAbout';
 import Image from 'next/image';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
+import  {WorkWithUsButton} from '@/components/Workwithus';
 import CoverImage from "@/assets/images/portada.png";
 import ImagenPortada from '@/assets/images/seguridad-latinsec-2.png';
 import Fisic from '@/assets/images/seguridad-fisica.png';
@@ -44,6 +45,7 @@ const Home = () => {
     <main className="z-10 relative">
       {/*<ChatBot />*/}
       <WhatsAppButton />
+      <WorkWithUsButton />
      <section className="relative min-h-screen overflow-hidden bg-gradient-to-l from-[#2a4a6c]/45 to-[#3d6db0]/20">
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-[1]">
@@ -53,7 +55,7 @@ const Home = () => {
           className="w-full h-full object-cover object-right"
         />
         {/* Overlay azul unificador */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07142a]/35 via-[#07142a]/20 to-[#07142a]/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#07142a]/65 via-[#07142a]/45 to-[#07142a]/25"></div>
       </div>
 
       {/* Shapes geométricos 
@@ -76,27 +78,21 @@ const Home = () => {
       ></div>
 
       {/* Contenido del hero */}
-      <div className="relative z-[3] h-screen flex items-center text-white px-4 pl-8 md:pl-16 lg:pl-24 xl:pl-32">
+      <div className="relative z-[3] h-screen flex items-center text-white">
+         <div className="w-full max-w-[1400px] mx-auto px-10">
         <div className="flex flex-col gap-3 max-w-[1000px]">
-          <h1 className="xl:text-[46px] lg:text-6xl text-4xl font-bold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)]">
-            Tu {/*{" "}
-            <Typewriter
-              words={["protección"]}
-              loop={5}
-              cursor
-              cursorStyle=""
-              typeSpeed={100}
-              deleteSpeed={80}
-              delaySpeed={2000}
-            />{" "}*/}
-             Protección es nuestra Especialidad
+          <h1 className="xl:text-[60px] lg:text-6xl text-4xl font-bold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)] uppercase">
+            Seguridad Privada<br />Profesional para <br />Cada Necesidad.
           </h1>
-          <p className="font-regular xl:text-xl lg:text-lg text-md max-w-md text-[#ffffff]">
+          <p className="font-regular xl:text-xl lg:text-lg text-md max-w-lg text-[#ffffff]">
             +29 años de trayectoria avalan nuestra experiencia.
           </p>
           <a href='#nuestros-servicios'><button className="font-regular xl:text-xl lg:text-lg text-md w-fit text-[#dbe4ff] bg-[#e63946] rounded-lg px-3 py-1">Conocer Servicios</button></a>
         </div>
       </div>
+
+      </div>
+     
     </section>
       <section className="bg-[#07142A] xl:h-20 lg:h-40 md:h-48 h-56 relative flex justify-center mt-10">
         <div className="bg-white max-w-[768px] p-4 grid xl:grid-cols-3 grid-cols-1 md:gap-6 gap-10 absolute -top-10">
