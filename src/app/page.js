@@ -81,7 +81,7 @@ const Home = () => {
       <div className="relative z-[3] h-screen flex items-center text-white">
          <div className="w-full max-w-[1400px] mx-auto px-10">
         <div className="flex flex-col gap-3 max-w-[1000px]">
-          <h1 className="xl:text-[60px] lg:text-6xl text-4xl font-bold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)] uppercase">
+          <h1 className="xl:text-[60px] lg:text-6xl text-2xl font-bold pt-20 drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)] uppercase">
             Seguridad Privada<br />Profesional para <br />Cada Necesidad.
           </h1>
           <p className="font-regular xl:text-xl lg:text-lg text-md max-w-lg text-[#ffffff]">
