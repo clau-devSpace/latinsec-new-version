@@ -23,8 +23,6 @@ import { DataCompanies } from '@/data/dataCompanies';
 import { DataTerritory } from '@/data/dataTerritory';
 import SwiperAbout from '@/components/SwiperAbout';
 import Image from 'next/image';
-import { WhatsAppButton } from '@/components/WhatsAppButton';
-import  {WorkWithUsButton} from '@/components/Workwithus';
 import CoverImage from "@/assets/images/portada.png";
 import ImagenPortada from '@/assets/images/seguridad-latinsec-2.png';
 import Fisic from '@/assets/images/seguridad-fisica.png';
@@ -38,14 +36,14 @@ import Totem from '@/assets/images/totem-vigilador.png';
 import NuevaPortada from '@/assets/images/portada-sin-brazos-cruzados.png';
 import GuardiaSeguridad from '@/assets/images/imagen-seguridad-fisica.png';
 import SplashScreen from "@/components/SplashScreen";
+import { FloatingButtons } from '@/components/FloatingButtons';
 
 const Home = () => {
   return (
     <> <SplashScreen duration={2500} />
     <main className="z-10 relative">
       {/*<ChatBot />*/}
-      <WhatsAppButton />
-      <WorkWithUsButton />
+      <FloatingButtons />
      <section className="relative min-h-screen overflow-hidden bg-gradient-to-l from-[#2a4a6c]/45 to-[#3d6db0]/20">
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-[1]">
@@ -95,7 +93,7 @@ const Home = () => {
      
     </section>
       <section className="bg-[#07142A] xl:h-20 lg:h-40 md:h-48 h-56 relative flex justify-center mt-10">
-        <div className="bg-white max-w-[768px] p-4 grid xl:grid-cols-3 grid-cols-1 md:gap-6 gap-10 absolute -top-10">
+        <div className="bg-white w-[90%] max-w-[768px] p-4 grid xl:grid-cols-3 grid-cols-1 md:gap-6 gap-10 absolute -top-10 left-1/2 -translate-x-1/2">
           <div className="flex items-center gap-2">
             <span>
               <FaUsers className="text-[45px] text-[#e63946]" />

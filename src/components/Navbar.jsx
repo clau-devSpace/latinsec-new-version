@@ -167,11 +167,11 @@ export const Navbar = () => {
 
       {/* Menú Mobile */}
       <nav
-        className={`absolute w-screen h-screen transition-all duration-500 ${
+        className={`absolute w-full overflow-hidden h-screen transition-all duration-500 ${
           openMenu ? "top-0" : "-translate-y-[1920px]"
         }`}
       >
-        <div className="bg-white px-4">
+        <div className="bg-white px-4 w-full">
           <div
             onClick={handleOpenMenu}
             className="pr-10 pt-5 text-3xl font-bold flex justify-end text-[#0e2c66] cursor-pointer"
