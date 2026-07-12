@@ -36,13 +36,13 @@ export const FloatingButtons = () => {
         href="https://wa.me/+5491157651676"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 bg-[#0263A5] hover:bg-[#024f87] transition-colors duration-300 rounded-full pl-2 pr-4 py-2 shadow-lg"
+        className="flex items-center gap-2 bg-[#e7272d] hover:bg-[#e7272d] transition-colors duration-300 rounded-full pl-2 pr-4 py-2 shadow-lg"
       >
         <div className="bg-white/20 rounded-full p-1 flex items-center justify-center">
           <WhatsappIcon className="w-4 h-4 md:w-6 md:h-6 text-white" />
         </div>
         <span className="text-white font-semibold text-xs md:text-sm whitespace-nowrap">
-          Solicita tu presupuesto
+          Solicitá tu presupuesto
         </span>
       </a>
     </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Logo from '@/assets/images/logo.png';
+import GptwCertificada from '@/assets/images/gptw-certificada.png';
 import { MenuHamburger } from './MenuHamburger';
 import { NavArrowIcon } from '@/assets/icons';
 import Image from 'next/image';
@@ -16,12 +17,22 @@ export const Navbar = () => {
 
   return (
     <header className="nav fixed top-0 w-full z-50 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
-      <nav className="bg-white max-w-[1400px] mx-auto px-10 py-2.5 grid grid-cols-[auto_1fr_auto] items-center gap-8">
+      <nav className="bg-white max-w-[1400px] mx-auto px-10 py-2.5 grid grid-cols-[auto_1fr_auto] lg:grid-cols-[auto_1fr_auto_1fr_auto] items-center gap-8">
         {/* Logo */}
         <div className="w-36">
           <a href="/">
             <Image src={Logo} alt="Logo" />
           </a>
+        </div>
+
+        {/* Certificación GPTW - centrada entre el logo y el menú */}
+        <div className="justify-self-center">
+          <Image
+            src={GptwCertificada}
+            alt="Great Place To Work Certificada JUN 2026 - JUN 2027 ARG"
+            className="h-12 w-auto object-contain"
+            priority
+          />
         </div>
 
         {/* Menú Desktop - Centrado */}
@@ -147,7 +158,7 @@ export const Navbar = () => {
         </ul>
 
         {/* Puntos decorativos - Desktop */}
-        <div className="lg:flex hidden gap-3 text-[#0e2c66]">
+        <div className="lg:flex hidden gap-3 text-[#0e2c66] lg:col-start-5">
           <a href="https://www.instagram.com/latinsec.seguridad/" target='_blank' className='bg-[#07142A] rounded-full p-2'>
             <FaInstagram className="w-4 h-4 text-[#fff] hover:text-[#e63946]" />
           </a>

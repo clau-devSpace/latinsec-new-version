@@ -35,6 +35,7 @@ import Research from '@/assets/images/research.jpg';
 import Totem from '@/assets/images/totem-vigilador.png';
 import NuevaPortada from '@/assets/images/portada-sin-brazos-cruzados.png';
 import GuardiaSeguridad from '@/assets/images/imagen-seguridad-fisica.png';
+import GptwCertificacion from '@/assets/images/gptw-certificada.png';
 import SplashScreen from "@/components/SplashScreen";
 import { FloatingButtons } from '@/components/FloatingButtons';
 
@@ -368,20 +369,36 @@ const Home = () => {
 </section>
 
     <section className="bg-white py-16">
-  <div className="max-w-5xl mx-auto">
+  <div className="max-w-6xl mx-auto px-5">
     <Reveal>
-      <div className="text-center max-w-4xl px-5 mx-auto">
-        <h3 className="text-[#0263A5] font-bold text-[40px] mb-4">
-          Sobre Nosotros
-        </h3>
+      <h3 className="text-[#0263A5] font-bold text-[40px] mb-10 text-center">
+        Sobre Nosotros
+      </h3>
 
-        <p className="text-[#07142A] font-regular text-base md:text-lg leading-relaxed">
-        Con <strong>29 años de trayectoria</strong>, somos una empresa de seguridad dedicada a la <strong>protección de personas, bienes e información</strong>. A lo largo de nuestra historia hemos trabajado con clientes de primer nivel, construyendo relaciones basadas en la <strong>confianza, el compromiso y el profesionalismo.</strong>
-        </p>
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
+        {/* Texto */}
+        <div className="md:flex-1 text-center md:text-left">
+          <p className="text-[#07142A] font-regular text-base md:text-lg leading-relaxed">
+            Con <strong>29 años de trayectoria</strong>, somos una empresa de seguridad dedicada a la <strong>protección de personas, bienes e información</strong>. A lo largo de nuestra historia hemos trabajado con clientes de primer nivel, construyendo relaciones basadas en la <strong>confianza, el compromiso y el profesionalismo.</strong>
+          </p>
 
-        <p className="text-[#07142A] font-regular text-base md:text-lg leading-relaxed mt-4">
-          Ofrecemos soluciones integrales de seguridad, combinando <strong>personal capacitado, tecnología confiable y procedimientos eficientes</strong>, adaptados a las necesidades de cada cliente. Nuestro enfoque es cercano y personalizado, con altos estándares de calidad y una mejora constante para responder a los nuevos desafíos del entorno.
-        </p>
+          <p className="text-[#07142A] font-regular text-base md:text-lg leading-relaxed mt-4">
+            Ofrecemos soluciones integrales de seguridad, combinando <strong>personal capacitado, tecnología confiable y procedimientos eficientes</strong>, adaptados a las necesidades de cada cliente. Nuestro enfoque es cercano y personalizado, con altos estándares de calidad y una mejora constante para responder a los nuevos desafíos del entorno.
+          </p>
+
+          <p className="text-[#4B5563] font-regular text-base md:text-lg leading-relaxed mt-4 md:border-l-4 md:border-[#0263A5] md:pl-4">
+            Y porque sabemos que un gran servicio empieza por un gran equipo, fuimos certificados como <strong>Great Place to Work&reg;</strong>.
+          </p>
+        </div>
+
+        {/* Certificación Great Place to Work */}
+        <div className="shrink-0 flex flex-col items-center gap-3">
+          <img
+            src={GptwCertificacion.src}
+            alt="Certificación Great Place to Work Argentina, Junio 2026 - Junio 2027"
+            className="w-[170px] md:w-[200px] h-auto"
+          />
+        </div>
       </div>
     </Reveal>
   </div>
